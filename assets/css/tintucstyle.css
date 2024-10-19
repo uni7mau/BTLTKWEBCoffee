@@ -373,6 +373,10 @@ input, button {
     color: var(--white-text-color);
 }
 
+.copyright-inner div {
+    display: flex;
+}
+
 @media (max-width: 1250px) {
     .header-middle {
         margin: 0 45px;
@@ -408,6 +412,14 @@ input, button {
         align-items: center;
     }
     .social-list-inner {
+        flex-direction: column;
+    }
+
+    .copyright-inner {
+        display: flex;
+        flex-direction: column;
+    }
+    .copyright-inner div {
         flex-direction: column;
     }
 }
