@@ -26,12 +26,11 @@ const input = document.querySelector("#email"),
         let pattern = /^[^ ]+@[^ ]+\.[a-z]{3}$/
         if (input.value === "") {
             submitBtn.classList.remove("active")
-            return submitBtn.style.opacity = 0.2
+            return ;
         }
         if (input.value.match(pattern)) {
             submitBtn.classList.add("active")
-            return submitBtn.style.opacity = 1
+            return ;
         }
         submitBtn.classList.remove("active")
-        submitBtn.style.opacity = 0.2
     })
