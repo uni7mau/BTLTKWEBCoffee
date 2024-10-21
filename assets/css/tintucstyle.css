@@ -96,7 +96,7 @@ input, button {
 .menu-icon.active .menu-icon-wrapper .bar2 {
     opacity: 0;
 }
-.menu-icon.active .menu-icon-wrapper .bar1 {
+.menu-icon.active .menu-icon-wrapper .bar3 {
     transform: rotate(45deg) translate(-6px, -7px);
 }
 
