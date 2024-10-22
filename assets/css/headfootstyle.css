@@ -590,6 +590,10 @@ input, button {
         display: none;
     } 
 
+    .container {
+        padding-top: 65px;
+    }
+
     .social-list-inner, .copyright-inner {
         width: 720px;
     }

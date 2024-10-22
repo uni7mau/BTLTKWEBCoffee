@@ -132,10 +132,6 @@
 }
 
 @media (max-width: 1000px) {
-    .container {
-        padding-top: 65px;
-    }
-
     .post-thumbnail {
         margin-bottom: 20px;
     }
