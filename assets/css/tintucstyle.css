@@ -290,14 +290,6 @@ input, button {
     height: 20px;
 }
 
-/* content appear here */
-
-.container {
-    height: 150vh;
-}
-
-/* no touching */
-
 .mobile-sidebar {
     width: 230px;
     height: 100vh;
