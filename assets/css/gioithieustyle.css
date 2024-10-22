@@ -30,11 +30,11 @@
 
 @font-face {
     font-family: 'NittiTypewriter';
-    src: url(./assets/fonts/NittiTypewriter-21d2137501e11e71a7bc1d5f496a6b7f.otf);
+    src: url(../fonts/NittiTypewriter-21d2137501e11e71a7bc1d5f496a6b7f.otf);
 }
 @font-face {
     font-family: 'BeauLuloClean-OneBold';
-    src: url(./assets/fonts/BeauLuloClean-OneBold-4ce34c0eaf26a1818d6dc4bae56dbaf8.otf);
+    src: url(../fonts/BeauLuloClean-OneBold-4ce34c0eaf26a1818d6dc4bae56dbaf8.otf);
 }
 
 * {
