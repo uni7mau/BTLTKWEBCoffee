@@ -33,6 +33,31 @@
     min-height: 25.5rem;
 }
 
+.contact .contactDetail{
+    padding-bottom: 0;
+    border: none;
+}
+
+@media screen (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+.contactDetail{
+    padding: 40px 0 40px;
+    margin-bottom: 30px;
+    line-height: 20px;
+
+}
+
+.container-th{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
 .franchising-title{
     line-height: 100%;
     font-family: 'BeauLuloClean-OneBold';
@@ -105,3 +130,4 @@
     text-align: center;
     margin-bottom: 30px;
 }
+
