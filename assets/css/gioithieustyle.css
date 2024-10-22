@@ -1,6 +1,7 @@
 :root {
     --light-theme-background-color: rgba(80, 120, 32, 0.6);
-    --default-shadow-value: 0px 5px 20px rgba(0, 0, 0, 0.7);
+    --default-shadow-value: 0px 5px 20px rgba(0, 0, 0, 0.2);
+    --dark-shadow-value: 0px 5px 20px rgba(0, 0, 0, 0.7);
     --gray-border-value: 1px solid #ced4da;
     --facebook-background-color-v1: #1877f2;
     --facebook-background-color-v2: #4665b5;
@@ -43,6 +44,7 @@
     font-family: 'NittiTypewriter';
     src: url(../fonts/NittiTypewriter-21d2137501e11e71a7bc1d5f496a6b7f.otf);
 }
+
 @font-face {
     font-family: 'BeauLuloClean-OneBold';
     src: url(../fonts/BeauLuloClean-OneBold-4ce34c0eaf26a1818d6dc4bae56dbaf8.otf);
@@ -114,7 +116,7 @@
 
 .introduce .poem img {
     width: 600px;
-    box-shadow: var(--default-shadow-value);
+    box-shadow: var(--dark-shadow-value);
 }
 
 .right-nav {

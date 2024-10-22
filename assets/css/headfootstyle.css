@@ -476,7 +476,7 @@ input, button {
 }
 
 #subForm .subButton {
-    background-color: var(--darker-background-color);
+    background-color: var(--gray-background-color);
     color: var(--white-text-color);
     text-transform: uppercase;
     width: 100px;
@@ -497,6 +497,10 @@ input, button {
     background-color: red;
     left: 0;
     top: 0;
+}
+
+#subForm .subButton.active {
+    background-color: var(--darker-background-color);
 }
 
 #subForm .subButton.active::before {
