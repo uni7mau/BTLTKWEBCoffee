@@ -292,10 +292,6 @@ input, button {
 
 /* content appear here */
 
-.container {
-    height: 150vh;
-}
-
 .carousel-caption {
     position: static !important;
     background-color:#FFF2D5;
