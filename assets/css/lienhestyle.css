@@ -1,0 +1,14 @@
+.title h2{
+    text-align: center;
+}
+.bannerCover{
+    background-attachment:  fixed !important;
+    background-image: url("../images/lienhe/franchising-8d95bb26fa189bd11bc19515c4a91d01.jpg"); 
+}
+
+.contact .heroText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
