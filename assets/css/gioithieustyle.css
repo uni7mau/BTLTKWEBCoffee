@@ -1,18 +1,40 @@
 :root {
-    --theme-color: #4c5b29;
-    --lighter-theme-color: #507820;
     --light-theme-background-color: rgba(80, 120, 32, 0.6);
     --default-shadow-value: 0px 5px 20px rgba(0, 0, 0, 0.7);
     --gray-border-value: 1px solid #ced4da;
     --facebook-background-color-v1: #1877f2;
     --facebook-background-color-v2: #4665b5;
+
+    --theme-color: #4c5b29;
+    --lighter-theme-color: #507820;
+    
+    --white-background-color: #ffffff;
+    --black-background-color: #000000;
+    --default-background-color-hover: #f1f1f1;
+    --darker-background-color: #3c5e2c;
+    --gray-background-color: #d9d9d9;
+
     --white-text-color: #ffffff;
     --black-text-color: #000000;
+    --default-text-color: #232323;
+    --lighter-text-color: #555555;
+
+    --white-border-color: #ffffff;
+    --black-border-color: #000000;
+    --gray-border-color: #bebfc0;
+    --theme-border-color: #3c5e2c;
+    --white-border-value: 1px solid #ffffff;
+    --black-border-value: 1px solid #000000;
+    --light-border-value: 1px solid #dddddd;
+    --dark-border-value: 1px solid #232323;
+    --theme-border-value: 1px solid #3c5e2c;
+
+    --default-input-text: #495057;
 
     --vt-palette-brown: #a16b56;
     --vt-palette-skin: #e0a370;
     --vt-palette-old: #dec584;
-    --vt-palette-lightold: #e2d7a7;
+    --vt-palette-lightold: #f5f3eb;
     --vt-palette-ocean: #709f9d;
     --vt-palette-darkocean: #567d89;
 }
@@ -90,7 +112,7 @@
     display: flex;
     align-items: center;
     gap: 20px;
-    border-bottom: var(--gray-border-value);
+    border-bottom: var(--white-border-value);
     padding: 20px;
 }
 
@@ -158,7 +180,7 @@
 
 .right-nav-list .horizontal-splitline {
     width: 100%;
-    height: 3px;
+    height: 2px;
     background-color: var(--white-text-color);
     margin: 20px 0;
 }

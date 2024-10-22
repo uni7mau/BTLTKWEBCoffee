@@ -131,8 +131,6 @@
     background-color: var(--gray-background-color);
 }
 
-
-
 @media (max-width: 1000px) {
     .container {
         padding-top: 65px;
@@ -144,20 +142,5 @@
 
     .post-title {
         text-align: center;
-    }
-}
-
-@media (max-width: 576px) {
-    .social-list-inner, .copyright-inner {
-        width: 320px;
-    }
-
-    .left-social, .right-social {
-        width: 100%;
-        align-items: center;
-    }
-
-    .social-list-inner {
-        flex-direction: column;
     }
 }
