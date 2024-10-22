@@ -1,14 +1,97 @@
 .title h2{
     text-align: center;
+    padding-top: 30px;
+    margin: 0px 0 30px;
+    font-size: 16px;
+    border-top: 1px solid rgba(60, 94, 44, 0.1);
+    color: #3c5e2c;
+    font-family: 'BeauLuloClean-OneBold';
+    font-weight: 600;
+
 }
 .bannerCover{
-    background-attachment:  fixed !important;
-    background-image: url("../images/lienhe/franchising-8d95bb26fa189bd11bc19515c4a91d01.jpg"); 
 }
-
+.companyAddress{
+    margin: 20px 0;
+    padding: 0;
+    padding-right: 0;
+}
 .contact .heroText{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0;
+}
+
+.franchising-title{
+    line-height: 100%;
+    font-family: 'BeauLuloClean-OneBold';
+    color: #351F11;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.companyAddress p{
+    color: #232323;
+    line-height: 1.7;
+    font-weight: 400;
+}
+
+.contact img{
+    max-width: 100%;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.franchising-div{
+    
+    background-color: #4c5b29;
+    line-height: 35px;
+    padding: 30px;
+    color: #fff;
+}
+
+.franchising-div h2{
+    font-family: 'BeauLuloClean-OneBold';
+    font-size: 18px;
+    tran;
+
+}
+
+.franchising-div ul{
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+
+.franchising-div li{
+    list-style: disc;
+    font: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+.franchising-box-will{
+    height: 310px;
+}
+
+.title-even{
+    text-align: center;
+}
+
+.franchising-button{
+    margin-top: 30px;
+    background-color: #4c5b29;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 35px;
+    font-size: 16px;
+    padding: 10px 50px;
+    text-align: center;
+    margin-bottom: 30px;
 }
