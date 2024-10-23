@@ -1,0 +1,193 @@
+:root {
+    --theme-color: #4c5b29;
+    --lighter-theme-color: #507820;
+    
+    --white-background-color: #ffffff;
+    --black-background-color: #000000;
+    --default-background-color-hover: #f1f1f1;
+    --darker-background-color: #3c5e2c;
+    --gray-background-color: #d9d9d9;
+
+    --white-text-color: #ffffff;
+    --black-text-color: #000000;
+    --default-text-color: #232323;
+    --lighter-text-color: #555555;
+
+    --white-border-color: #ffffff;
+    --black-border-color: #000000;
+    --gray-border-color: #bebfc0;
+    --theme-border-color: #3c5e2c;
+    --white-border-value: 1px solid #ffffff;
+    --black-border-value: 1px solid #000000;
+    --gray-border-value: 1px solid #ced4da;
+    --light-border-value: 1px solid #dddddd;
+    --dark-border-value: 1px solid #232323;
+    --theme-border-value: 1px solid #3c5e2c;
+
+    --default-input-text: #495057;
+    --default-body-color: rgb(234, 229, 218);
+
+    --vt-palette-brown: #a16b56;
+    --vt-palette-skin: #e0a370;
+    --vt-palette-old: #dec584;
+    --vt-palette-lightold: #f5f3eb;
+    --vt-palette-ocean: #709f9d;
+    --vt-palette-darkocean: #567d89;
+
+    --default-shadow-value: 0px 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+@font-face {
+    font-family: 'NittiTypewriter';
+    src: url(../fonts/NittiTypewriter-21d2137501e11e71a7bc1d5f496a6b7f.otf);
+}
+@font-face {
+    font-family: 'BeauLuloClean-OneBold';
+    src: url(../fonts/BeauLuloClean-OneBold-4ce34c0eaf26a1818d6dc4bae56dbaf8.otf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'NittiTypewriter', Arial, sans-serif;
+    color: var(--default-text-color);
+    background-color: var(--default-body-color);
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+input, button {
+    border: none;
+    outline: 0;
+    font-family: inherit;
+}
+
+/* ---------------container------------------ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-inner {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 128px 0;
+}
+
+.footer .quest-list {
+    width: 57%;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer .quest-list > h2 {
+    font-family: 'BeauLuloClean-OneBold';
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: var(--theme-color);
+}
+
+.footer .quest-cell {
+    width: 600px;
+    border-bottom: var(--theme-border-value);
+}
+
+.quest-cell .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.quest-cell .icon-box {
+    position: relative;
+    display: flex;
+}
+
+.icon-box > svg:nth-child(2) {
+    position: absolute;
+    transform: rotate(90deg);
+}
+
+.title.active svg:nth-child(2) {
+    display: none;
+}
+
+.quest-cell .paragraph {
+    display: grid;
+    transition: 0.3s ease;
+    grid-template-rows: 0fr;
+    > div {
+        overflow: hidden;
+    }
+}
+
+.paragraph.active {
+    grid-template-rows: 1fr;
+}
+
+.quest-cell .title p, .quest-cell .paragraph p {
+    font-size: 16px;
+    color: var(--theme-color);
+    padding: 20px 0;
+}
+
+.quest-cell .paragraph p {
+    text-indent: 30px;
+    padding-top: 0px;
+    width: 530px;
+}
+
+.footer .quest-list svg {
+    width: 20px;
+}
+
+.footer .img-box {
+    width: 500px;
+}
+
+.footer .img-box > img {
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 1000px) {
+    .footer-inner {
+        display: block;
+    }
+}
