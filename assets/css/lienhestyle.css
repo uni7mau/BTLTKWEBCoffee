@@ -7,15 +7,13 @@
     color: #3c5e2c;
     font-family: 'BeauLuloClean-OneBold';
     font-weight: 600;
-
 }
+
 .bannerCover{
     background-attachment:  fixed !important;
     position: relative;
     background: url(../images/lienhe/franchising-8d95bb26fa189bd11bc19515c4a91d01.jpg) center center / cover no-repeat;
 }
-
-
 
 .companyAddress{
     margin: 20px 0;
