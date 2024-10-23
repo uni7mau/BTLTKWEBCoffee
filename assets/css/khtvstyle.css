@@ -109,7 +109,7 @@ input, button {
 
 .footer .quest-list {
     width: 57%;
-    margin-right: 20px;
+    margin-right: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -121,10 +121,11 @@ input, button {
     font-weight: bold;
     margin-bottom: 20px;
     color: var(--theme-color);
+    text-align: center;
 }
 
 .footer .quest-cell {
-    width: 600px;
+    width: 100%;
     border-bottom: var(--theme-border-value);
 }
 
@@ -165,6 +166,7 @@ input, button {
     font-size: 16px;
     color: var(--theme-color);
     padding: 20px 0;
+    margin-right: 20px;
 }
 
 .quest-cell .paragraph p {
@@ -188,6 +190,14 @@ input, button {
 
 @media (max-width: 1000px) {
     .footer-inner {
-        display: block;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 0;
+    }
+
+    .quest-list {
+        width: 100% !important;
+        margin-right: 0 !important;
+        margin-bottom: 50px;
     }
 }
