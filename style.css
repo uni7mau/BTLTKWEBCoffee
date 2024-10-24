@@ -36,6 +36,13 @@
     font-family: 'BeauLuloClean-OneBold';
     src: url(./assets/fonts/BeauLuloClean-OneBold-4ce34c0eaf26a1818d6dc4bae56dbaf8.otf);
 }
+
+@media only screen and (max-width: 786px) {
+    .card-text {
+      display: none;
+    }
+}
+
 /* content appear here */
 
 .carousel-caption {
