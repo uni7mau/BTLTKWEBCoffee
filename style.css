@@ -181,13 +181,13 @@
 
 /* General styling for the footer */
 .footer-se {
-    background-color: #f7f7f7; /* Light background */
+    
     padding: 20px;
     display: flex;
     justify-content: space-around; /* Align categories */
     font-family: 'Arial', sans-serif;
     margin: 0 auto;
-    width: 80%;
+    width: 100%;
 }
 
 .footer-se h4 {
