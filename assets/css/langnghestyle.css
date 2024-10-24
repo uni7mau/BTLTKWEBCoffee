@@ -3,5 +3,35 @@
 }
 
 .main .ggform{
-    width: 100%;
+    margin: auto;
+    max-width: 90vw;
+    width: 640px;
+
+    background-color: transparent;
+}
+
+.main .head-once{
+    text-align: center;
+    margin: auto;
+    max-width: 90vw;
+    width: 640px;
+}
+
+.ggform iframe{
+    overflow: hidden;
+}
+
+iframe {
+    border: none;
+}
+
+.main .head-once img{
+    max-height: 22.503374831258437vw;
+    max-width: 90vw;
+    height: 160.02399880005999px;
+    width: 640px;
+
+    border: 1px solid rgb(218,220,224);
+    border-radius: 8px;
+    margin-top: 12px;
 }
