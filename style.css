@@ -38,9 +38,70 @@
 }
 
 @media only screen and (max-width: 786px) {
+    .m-header{
+        z-index: 100;
+    }
+    .Pichome .carousel-item{
+        padding-bottom: 0;
+    }
+
+    .Pichome .carousel-item .carousel-caption h3{
+        font-size: 16px;
+    }
+
+    .Pichome .carousel-item .carousel-caption p{
+        display: none;
+    }
+
+    .content .story{
+        padding: 40px 0;
+    }
+
+    .content .bcolor{
+        display: none;
+    }
+
+    .card {
+        padding: 10px 0;
+    }
+
+    .content .card-body{
+        height: auto;
+    }
+
+    .content .leftTxt .card-body{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #FFF2D5;
+        opacity: 90%;
+        padding: 10px;
+        line-height: 1.7;
+        height: auto;
+    }
+    .content .reCard .card-body{
+        height: auto;
+        width: auto;
+    }
+    .content .card-title{
+        font-size: 18px;
+    }
     .card-text {
       display: none;
     }
+
+    div.footer-se{
+        display: none;
+    }
+    
+
+    
 }
 
 /* content appear here */
