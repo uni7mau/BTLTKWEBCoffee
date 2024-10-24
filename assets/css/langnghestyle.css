@@ -1,43 +1,7 @@
-.newsRecuit .post-box{
-    margin-bottom: 30px;
-    padding-bottom: 30px;
-    border-bottom: solid 1px #eee;
-}
-
-.container-we{
+.main{
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
 }
 
-.listNews .content{
-    min-height: 50vh;
-}
-
-.listNews img{
-    max-width: 100%;
-}
-
-.teaser{
-    overflow: hidden;
-    line-height: 0;
-    margin-bottom: 10px;
-    border: 1px solid #3c5e2c;
-}
-
-
-
-
-.listNews{
-    min-height: 450px;
-    padding: 30px 0;
-    border-top: 1px solid #bebfc0;
-}
-
-
-.listNews a{
-    color: #555555;
-
+.main .ggform{
+    width: 100%;
 }
