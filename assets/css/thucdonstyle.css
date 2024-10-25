@@ -1,0 +1,231 @@
+:root {
+    --theme-color: #4c5b29;
+    --lighter-theme-color: #507820;
+    
+    --white-background-color: #ffffff;
+    --black-background-color: #000000;
+    --default-background-color-hover: #f1f1f1;
+    --darker-background-color: #3c5e2c;
+
+    --white-text-color: #ffffff;
+    --black-text-color: #000000;
+    --default-text-color: #232323;
+    --lighter-text-color: #555555;
+
+    --white-border-color: #ffffff;
+    --black-border-color: #000000;
+    --gray-border-color: #bebfc0;
+    --theme-border-color: #3c5e2c;
+    --white-border-value: 1px solid #ffffff;
+    --black-border-value: 1px solid #000000;
+    --gray-border-value: 1px solid #ced4da;
+    --light-border-value: 1px solid #dddddd;
+    --dark-border-value: 1px solid #232323;
+    --theme-border-value: 1px solid #3c5e2c;
+
+    --default-input-text: #495057;
+
+    --default-shadow-value: 0px 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+@font-face {
+    font-family: 'NittiTypewriter';
+    src: url(../assets/fonts/NittiTypewriter-21d2137501e11e71a7bc1d5f496a6b7f.otf);
+}
+@font-face {
+    font-family: 'BeauLuloClean-OneBold';
+    src: url(../assets/fonts/BeauLuloClean-OneBold-4ce34c0eaf26a1818d6dc4bae56dbaf8.otf);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 0px;
+}
+
+.contents {
+    position: relative;
+    margin-top: 40px; 
+    margin-left: 40px; 
+    transition: all 0.3s ease-in-out;
+    font-family: 'BeauLuloClean-OneBold';
+}
+
+.menu {
+    padding-left: 60px;
+}
+
+.border_right_before::before {
+    content: '';
+    position: absolute;
+    left: -30px;
+    width: 1px;
+    height: 100%;
+    top: 0px;
+    background: #bebfc0;
+}
+
+.left-window {
+    position: sticky;
+    top: 20px;
+    left: 0;
+    width: 250%;
+    padding-top: 77px; 
+    font-size: 16px;
+    font-family: 'NittiTypewriter', Arial, sans-serif;
+}
+
+.list li {
+    margin-bottom: 10px;
+}
+
+.list li a {
+    color: #3a5734;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    padding-left: 20px;
+    transition: color 0.3s ease; 
+}
+
+.list li a::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: transparent;
+    transition: color 0.3s ease;
+}
+
+.list li a:hover::before, 
+.list li a.active::before { 
+    color: #3a5734; 
+}
+
+.list li a:hover, 
+.list li a.active { 
+    color: #ff0000;
+}
+
+.contents img {
+    max-width: 100%;
+    width: 100%;
+}
+
+.contents h2 {
+    font-weight: bold;
+    color: #555;
+}
+
+.float_left {
+    float: left;
+}
+
+.left-window a  {
+    font-weight: bold;
+    color: #000;
+}
+
+.left-window ul li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.left-window ul li a {
+    color: #232323;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.left-window ul li a:hover {
+    color: #3c5e2c;
+}
+
+.block_menu_item h2 {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 992px) {
+    p {
+        font-size: 10px;
+    }   
+}
+
+@media (min-width: 992px) {
+    p {
+        font-size: 13px;
+    }   
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.block_menu_item .col-4 {
+    padding: 0;
+}
+
+.block_menu_item .col-sm-4 {
+    margin-bottom: 30px;
+}
+
+.block_menu_item .col-sm-4 a {
+    text-decoration: none;
+    color: #343a40;
+    transition: transform 0.3s ease-in-out;
+}
+
+.block_menu_item .col-sm-4 a:hover {
+    transform: scale(1.05);
+}
+
+.block_menu_item .col-sm-4 img {
+    width: 75%;
+    padding-bottom: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.block_menu_item .col-sm-4 img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.block_menu_item .col-sm-4 h3 {
+    font-size: 13px;
+    color: #495057;
+    margin-top: 15px;
+    font-weight: 600;
+    transition: color 0.3s ease-in-out;
+}
+
+.block_menu_item .col-sm-4 h3:hover {
+    color: #3c5e2c;
+}
+
+.block_menu_item .price {
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+    color: #3c5e2c;
+    margin-top: 5px;
+    font-family: 'NittiTypewriter', Arial, sans-serif;
+}
+
+hr {
+    margin: 0;
+    color: #000;
+}

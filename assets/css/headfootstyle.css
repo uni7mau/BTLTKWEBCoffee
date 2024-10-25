@@ -79,6 +79,7 @@ input, button {
     height: 65px;
     border-bottom: var(--gray-border-value);
     position: fixed;
+    z-index: 1000000;
     background-color: var(--white-background-color);
 }
 
@@ -88,6 +89,7 @@ input, button {
     display: flex;
     justify-content: space-between;
     padding: 0 20px;
+
 }
 
 .menu-icon {
