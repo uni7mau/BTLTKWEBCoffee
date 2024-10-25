@@ -4,24 +4,30 @@ function toogleSubMenu(button) {
 }
 
 let images = [...document.querySelectorAll(".carousel-item")]
-let currImg = 1;
-let currPos = 0;
+let idcts = [...document.querySelectorAll(".item")]
+let currImg = 0;
+images[0].style.display = "block"
+idcts[0].classList.add("active")
 
 function show(pos) {
-    let target = document.querySelector(".carousel-pics")
-    if (pos == 1) target. 
-    
-
+    for (var i = 0; i < images.length; i++) {
+        if (i != pos) {
+            images[i].style.display = "none"
+            idcts[i].classList.remove("active")
+        }
+    }
+    images[pos].style.display = "block"
+    idcts[pos].classList.add("active")
 }
 
 function prevImg() {
     currImg -= 1;
-    if (currImg == 0) currImg = images.length
+    if (currImg < 0) currImg = images.length - 1
     show(currImg)
 }
 
 function nextImg() {
-    currImg -= 1;
-    if (currImg == 0) currImg = images.length
+    currImg += 1;
+    if (currImg >= images.length) currImg = 0
     show(currImg)
 }

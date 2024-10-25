@@ -4,6 +4,7 @@
     
     --white-background-color: #ffffff;
     --black-background-color: #000000;
+    --milky-background-color: rgb(249, 245, 229);
     --default-background-color-hover: #f1f1f1;
     --darker-background-color: #3c5e2c;
     --gray-background-color: #d9d9d9;
@@ -178,7 +179,7 @@ input, button {
 
 @keyframes pulse {
     /* 0% { scale: 0.9; } */
-    50% { scale: 1.2; }
+    50% { scale: 1.1; }
     /* 100% { scale: 0.9; } */
 }
 
@@ -350,19 +351,12 @@ input, button {
 
 #CTKM {
     position: relative;
-    height: 116vh;
-}
-
-#CTKM .CTKM-background {
-    width: 100%;
-    height: 116vh;
+    height: 124vh;
     background-image: url("../../assets/images/khtv/ctkmbackground.png");
-    position: absolute;
 }
 
 #CTKM .CTKM-inner {
     width: 100%;
-    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -396,12 +390,7 @@ input, button {
 
 #CTKM .carousel {
     width: 100%;
-    height: 84vh;
     margin-top: 40px;
-}
-
-#CTKM .carousel-inner {
-    height: 85%;
 }
 
 #CTKM .carousel-inner {
@@ -410,30 +399,19 @@ input, button {
     position: relative;
 }
 
-#CTKM .viewable-box {
-    width: 75%;
-    height: 600px;
-    position: absolute;
-    overflow: hidden;
-    z-index: 100;
-}
-
 #CTKM .carousel-pics {
-    position: absolute;
-    width: 4300px;
-    height: 600px;
-    transition: all 350ms ease-in-out;
     display: flex;
+    justify-content: center;
+    width: 75%;
+    overflow: hidden;
 }
 
 #CTKM .carousel-item {
-    width: 30%;
-    margin-right: 3%;
 }
 
 #CTKM .carousel-item img {
-    width: 100%;
-    height: 100%;
+    width: 1300px;
+    height: 630px;
 }
 
 #CTKM .carousel-arr-left svg, #CTKM .carousel-arr-right svg {
@@ -445,45 +423,152 @@ input, button {
     width: 50px;
     height: 50px;
     position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     z-index: 1000;
     cursor: pointer;
 }
 
 #CTKM .carousel-arr-left {
     left: 7%;
-    top: 50%;
-    transform: translateY(-50%);
 }
 
 #CTKM .carousel-arr-right {
     right: 7%;
-    top: 50%;
-    transform: translateY(-50%);
 }
 
+#CTKM .indicator-circle {
+    width: 80px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
+#CTKM .indicator-circle .item {
+    width: 15px;
+    height: 15px;
+    border: var(--white-border-value);
+    border-radius: 50%;
+}
 
+#CTKM .indicator-circle .item.active {
+    background-color: var(--milky-text-color);
+}
 
+#CHINHSACH {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+#CHINHSACH .CHINHSACH-background {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+#CHINHSACH img:nth-child(1) {
+    margin: 20px 0;
+    width: 75%;
+}
 
+#CHINHSACH img:nth-child(2) {
+    margin-bottom: 50px;
+    width: 100%;
+}
 
+#CHINHSACH .CHINHSACH-inner {
+    width: 90%;
+    margin-bottom: 20px;
+}
 
+#HUONGDANDK {
+    width: 100%;
+    position: relative;
+    background-image: url("../../assets/images/khtv/ctkmbackground.png");
+}
 
+#HUONGDANDK .HUONGDANDK-inner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+#HUONGDANDK .hd-title {
+    margin-top: 50px;
+    width: 600px;
+    text-align: center;
+}
 
+#HUONGDANDK .hd-title p:nth-child(1) {
+    font-family: 'BeauLuloClean-OneBold';
+    line-height: 1.4;
+    font-size: 44px;
+    color: var(--milky-text-color);
+    letter-spacing: -5px;
+    margin-bottom: 20px;
+}
 
+#HUONGDANDK .hd-title p:nth-child(2) {
+    font-size: 18px;
+    color: var(--milky-text-color);
+    letter-spacing: -1px;
+}
 
+#HUONGDANDK .hd-content {
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
 
+#HUONGDANDK .step1, #HUONGDANDK .step2 {
+    margin-top: 40px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+#HUONGDANDK .step-box {
+    width: 104px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--milky-background-color);
+}
 
+#HUONGDANDK .step-box p {
+    font-family: 'BeauLuloClean-OneBold';
+    font-size: 16px;
+    color: var(--primary-text-color-v2);
+    letter-spacing: -2px;
+}
 
+#HUONGDANDK .step1 > p, #HUONGDANDK .step2 > p {
+    height: 90px;
+    color: var(--milky-text-color);
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: -1px;
+    margin: 20px 0;
+    text-align: center;
+}
 
+#HUONGDANDK .step1 img, #HUONGDANDK .step2 img {
+    width: 350px;
+}
 
-
-
-
-
+#HUONGDANDK .step2 img {
+    transform: translateX(30px);
+}
 
 .footer {
     min-height: calc(100vh - 65px);
@@ -619,13 +704,34 @@ input, button {
     #QUYENLOI .descript-box {
         margin-left: 0;
     }
-
-
+    
     #QUYENLOI .QL-inner {
         padding: 0;
     }
 
+    #CTKM {
+        height: 100vh;
+    }
 
+    #CTKM .tt p {
+        font-size: 44px;
+    }
+
+    #CTKM .carousel-item img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #HUONGDANDK .hd-content {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    #HUONGDANDK .hd-title {
+        width: 370px;
+    }
 
     .footer-inner {
         flex-direction: column;
@@ -653,6 +759,18 @@ input, button {
         width: 300px;
     }
 
+    #CTKM {
+        height: 128vh;
+    }
+
+    #CTKM .carousel-arr-left {
+        left: 0;
+    }
+
+    #CTKM .carousel-arr-right {
+        right: 0;
+    }
+
     #QUYENLOI .content-box {
         width: 100%;
     }
@@ -660,5 +778,9 @@ input, button {
     #QUYENLOI .descript-box {
         width: 300px;
         margin-left: 0;
+    }
+
+    #CHINHSACH .CHINHSACH-background {
+        width: 100%;
     }
 }

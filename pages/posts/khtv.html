@@ -105,7 +105,6 @@
             </div>
         </div>
         <div id="CTKM">
-            <div class="CTKM-background"></div>
             <div class="CTKM-inner">
                 <div class="title-box">
                     <div class="tt">
@@ -121,46 +120,71 @@
                     </a>
                 </div>
                 <div class="carousel">
-                    <div class="carousel-inner" data-carousel>
-                        <div class="carousel-arr-left" data-carousel-btn="prev">
+                    <div class="carousel-inner">
+                        <div class="carousel-arr-left" id="prev-btn" onclick="prevImg()">
                             <svg fill="rgb(249, 245, 229)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
                         </div>
-                        <div class="viewable-box">
-                            <div class="carousel-pics" data-slides>
-                                <div id="crs-item-1" class="carousel-item" data-active>
-                                    <img src="../../assets/images/khtv/ctkm1.jpg" alt="CSKM1">
-                                </div>
-                                <div id="crs-item-2" class="carousel-item">
-                                    <img src="../../assets/images/khtv/ctkm2.jpg" alt="CSKM2">
-                                </div>
-                                <div id="crs-item-3" class="carousel-item">
-                                    <img src="../../assets/images/khtv/ctkm3.jpg" alt="CSKM3">
-                                </div>
+                        <div class="carousel-pics">
+                            <div id="crs-item-1" class="carousel-item">
+                                <img src="../../assets/images/khtv/ctkm1.jpg" alt="CSKM1">
+                            </div>
+                            <div id="crs-item-2" class="carousel-item">
+                                <img src="../../assets/images/khtv/ctkm2.jpg" alt="CSKM2">
+                            </div>
+                            <div id="crs-item-3" class="carousel-item">
+                                <img src="../../assets/images/khtv/ctkm3.jpg" alt="CSKM3">
                             </div>
                         </div>
-                        <div class="carousel-arr-right" data-carousel-btn="next">
+                        <div class="carousel-arr-right" id="next-btn" onclick="nextImg()">
                             <svg fill="rgb(249, 245, 229)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg>
                         </div>
                     </div>
                     <div class="indicator-circle">
-                        <div class="item" data-index="1"></div>
-                        <div class="item" data-index="2"></div>
-                        <div class="item" data-index="3"></div>
+                        <div class="item"></div>
+                        <div class="item"></div>
+                        <div class="item"></div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="CHINHSACH">
-
+        <div id="CHINHSACH">
+            <div class="CHINHSACH-background">
+                <img src="../../assets/images/khtv/csheader.png" alt="Chinh sach header">
+                <img src="../../assets/images/khtv/chinhsach.jpg" alt="Chinh sach">
+            </div>
+            <div class="CHINHSACH-inner">
+                <p>*Tặng 01 đồ ăn chơi cho hóa đơn từ 99.000đ đầu tiên sau khi thăng hạng. Đồ ăn chơi được tặng là Hướng dương hoặc Ngô cay.</p>
+                <p>**Tặng 01 đồ uống bất kỳ trong menu cho khách hàng có sinh nhật trong tháng. Khách hàng cần đăng ký làm Khách hàng thành viên trước ngày sinh nhật của mình ít nhất 10 ngày để nhận được ưu đãi sinh nhật. </p>
+            </div>
         </div>
         <div id="HUONGDANDK">
-
-        </div>
-        <div id="FAQs">
-
-        </div>
-        <div id="CAMON">
-
+            <div class="HUONGDANDK-inner">
+                <div class="hd-title">
+                    <p>Đăng ký sớm - Nhận ưu đãi sớm!</p>
+                    <p>Đăng ký trở thành Khách hàng thành viên của Cộng ngay hôm nay chỉ với 2 bước đơn giản, nhanh gọn!</p>
+                </div>
+                <div class="mem-sub-button" id="mem-sub-btn">
+                    <a href="#">Đăng ký thành viên ngay &nbsp;
+                        <svg fill="rgb(249, 245, 229)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                    </a>
+                </div>
+                <div class="hd-content">
+                    <div class="step1">
+                        <div class="step-box">
+                            <p>Bước 1</p>
+                        </div>
+                        <p>Bạn hãy nhấn vào nút "ĐĂNG KÝ THÀNH VIÊN" dưới đây, hoặc tìm kiếm "Cộng Cà Phê" tại mục Khám phá trên Zalo.</p>
+                        <img src="../../assets/images/khtv/zalooa.png" alt="QR">
+                    </div>
+                    <div class="step2">
+                        <div class="step-box">
+                            <p>Bước 2</p>
+                        </div>
+                        <p>Nhấn "Quan tâm" sau đó làm theo hướng dẫn được gửi vào tin nhắn Zalo của bạn.</p>
+                        <img src="../../assets/images/khtv/mobile.png" alt="Mobile">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="footer">
