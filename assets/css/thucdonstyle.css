@@ -43,17 +43,25 @@ html {
 
 .container {
     position: relative;
+    align-items: flex-start;
+    width: 90%;
+}
+
+.product {
     display: flex;
     align-items: flex-start;
-    padding-top: 0px;
+    margin-right: 20px;
 }
 
 .contents {
     position: relative;
+    width: 9000px;
     margin-top: 40px; 
     margin-left: 40px; 
+    margin-right: 55px;
     transition: all 0.3s ease-in-out;
     font-family: 'BeauLuloClean-OneBold';
+    float: left;
 }
 
 .menu {
@@ -74,10 +82,15 @@ html {
     position: sticky;
     top: 20px;
     left: 0;
-    width: 250%;
-    padding-top: 77px; 
+    width: 3500px;
+    padding-top: 77px;
     font-size: 16px;
     font-family: 'NittiTypewriter', Arial, sans-serif;
+}
+
+.list {
+    padding: 0;
+    float: right;
 }
 
 .list li {
@@ -154,16 +167,20 @@ html {
     margin-bottom: 20px;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
     p {
         font-size: 10px;
     }   
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
     p {
         font-size: 13px;
     }   
+}
+
+@media (max-width: 1000px) {
+     
 }
 
 .row {
@@ -172,7 +189,7 @@ html {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin-right: -15px;
-    margin-left: -15px;
+    margin-left: 0;
 }
 
 .block_menu_item .col-4 {
