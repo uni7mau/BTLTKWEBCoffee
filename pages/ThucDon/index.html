@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="m-header">
+        <div class="m-header-inner">
+            <div id="mb-menu-i" class="menu-icon" onclick="changeSidebar()">
+                <div class="bar1 bar"></div>
+                <div class="bar2 bar"></div>
+                <div class="bar3 bar"></div>
+            </div>
+            <div class="header-middle">
+                <a href="../../index.html">
+                    <img src="../assets/images/logo.png" alt="Logo">
+                </a>
+            </div>
+            <div class="language-change">
+                <div class="appear-language-flag">
+                    <img src="../assets/images/vn-flag.png" alt="Flag img">
+                </div>
+                <div class="language-dialog">
+                    <div class="l-option">
+                        <img src="../../assets/images/vn-flag.png" alt="Flag img">
+                    </div>
+                    <div class="l-option">
+                        <svg fill="#3d5e2c" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M352 256c0 22.2-1.2 43.6-3.3 64l-185.3 0c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64l185.3 0c2.2 20.4 3.3 41.8 3.3 64zm28.8-64l123.1 0c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64l-123.1 0c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64zm112.6-32l-116.7 0c-10-63.9-29.8-117.4-55.3-151.6c78.3 20.7 142 77.5 171.9 151.6zm-149.1 0l-176.6 0c6.1-36.4 15.5-68.6 27-94.7c10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5c11.6 26 20.9 58.2 27 94.7zm-209 0L18.6 160C48.6 85.9 112.2 29.1 190.6 8.4C165.1 42.6 145.3 96.1 135.3 160zM8.1 192l123.1 0c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64L8.1 320C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64zM194.7 446.6c-11.6-26-20.9-58.2-27-94.6l176.6 0c-6.1 36.4-15.5 68.6-27 94.6c-10.5 23.6-22.2 40.7-33.5 51.5C272.6 508.8 263.3 512 256 512s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6C112.2 482.9 48.6 426.1 18.6 352l116.7 0zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6c25.5-34.2 45.2-87.7 55.3-151.6l116.7 0z"/></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="computer-header">
+        <div class="header-inner">
+            <div class="header-left">
+                <div class="nav-cell">
+                    <a href="#" class="header-nav-link">CÂU CHUYỆN</a>
+                </div>
+                <div class="nav-cell">
+                    <a href="#" class="header-nav-link">BẢNG TIN</a>
+                    <div class="header-dialog">
+                        <div class="dialog-cell">
+                            <a href="#" class="dialog-link">Chính sách KHTV</a>
+                        </div>
+                        <div class="dialog-cell">
+                            <a href="#" class="dialog-link">Tin Tức</a>
+                        </div>
+                        <div class="dialog-cell">
+                            <a href="#" class="dialog-link">Hợp Tác</a>
+                        </div>
+                        <div class="dialog-cell">
+                            <a href="#" class="dialog-link">Đó Đây</a>
+                        </div>
+                        <div class="dialog-cell">
+                            <a href="#" class="dialog-link">Pha Chế</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-cell">
+                    <a href="#" class="header-nav-link">THỰC ĐƠN</a>
+                </div>
+            </div>
+            <div class="header-middle">
+                <img src="logo.png" alt="Logo">
+            </div>
+            <div class="header-right">
+                <div class="nav-cell">
+                    <a href="#" class="header-nav-link">QUẦY MẬU DỊCH</a>
+                </div>
+                <div class="nav-cell">
+                    <a href="#" class="header-nav-link">CỬA HÀNG</a>
+                </div>
+                <div class="nav-cell">
+                    <a href="#" class="header-nav-link">LIÊN HỆ</a>
+                    <div class="header-dialog">
+                        <div class="dialog-cell">
+                            <a href="#" class="dialog-link">Tuyển Dụng</a>
+                        </div>
+                        <div class="dialog-cell">
+                            <a href="#" class="dialog-link">Cộng Lắng Nghe</a>
+                        </div>
+                        <div class="dialog-cell">
+                            <a href="#" class="dialog-link">Về Chúng Tôi</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="language-change">
+            <div class="appear-language-flag">
+                <img src="vn-flag.png" alt="Flag img">
+            </div>
+            <div class="language-dialog">
+                <ul class="l-change-dialog-wrapper">
+                    <li class="l-option">
+                        <img src="vn-flag.png" alt="Flag img">
+                    </li>
+                    <li class="l-option">
+                        <svg fill="#3d5e2c" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M352 256c0 22.2-1.2 43.6-3.3 64l-185.3 0c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64l185.3 0c2.2 20.4 3.3 41.8 3.3 64zm28.8-64l123.1 0c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64l-123.1 0c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64zm112.6-32l-116.7 0c-10-63.9-29.8-117.4-55.3-151.6c78.3 20.7 142 77.5 171.9 151.6zm-149.1 0l-176.6 0c6.1-36.4 15.5-68.6 27-94.7c10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5c11.6 26 20.9 58.2 27 94.7zm-209 0L18.6 160C48.6 85.9 112.2 29.1 190.6 8.4C165.1 42.6 145.3 96.1 135.3 160zM8.1 192l123.1 0c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64L8.1 320C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64zM194.7 446.6c-11.6-26-20.9-58.2-27-94.6l176.6 0c-6.1 36.4-15.5 68.6-27 94.6c-10.5 23.6-22.2 40.7-33.5 51.5C272.6 508.8 263.3 512 256 512s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6C112.2 482.9 48.6 426.1 18.6 352l116.7 0zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6c25.5-34.2 45.2-87.7 55.3-151.6l116.7 0z"/></svg>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="left-mobile">
+            <!-- code here -->
+        </div>
+        <div class="float_left left-window">
+            <ul class="list">
+                <li><a href="#section1">Đồ Uống Mùa Thu</a></li>
+                <li><a href="#section2">Đặc Sản Tại Cộng</a></li>
+                <li><a href="#section3">Cà Phê Việt Nam</a></li>
+                <li><a href="#section4">Trà Shan Tuyết Cổ Thụ</a></li>
+                <li><a href="#section5">Đồ Uống Địa Phương</a></li>
+                <li><a href="#section6">Khỏe - Đẹp</a></li>
+                <li><a href="#section7">Topping</a></li>
+                <li><a href="#section8">Đồ Ăn Chơi</a></li>
+            </ul>
+        </div>
+        
+        <div class="contents border_right_before">
+            <div id="section1" class="block_menu_item">
+                <h2>Đồ Uống Mùa Thu</h2>
+                <div class="row">    
+                    <div class="col-4 col-sm-4">
+                        <a href="#">
+                            <img src="images/Shan-tuyết-dâu-tây-lớn.png">
+                            <p class="itemTitle">Shan Tuyết Dâu tây</p>
+                            <span class="price">50,000 Đ</span>
+                        </a>
+                    </div>
+                    <div class="col-4 col-sm-4">
+                        <a href="#">
+                            <img src="images/Dâu-kem-đậu-phộng-lớn.png">
+                            <p class="itemTitle">Dâu Kem Đậu Phộng</p>
+                            <span class="price">59,000 Đ</span>
+                        </a>
+                    </div>
+                    <div class="col-4 col-sm-4">
+                        <a href="#">
+                            <img src="images/Cà-kem-đậu-phộng-nhỏ.png">
+                            <p class="itemTitle">Cà Kem Đậu Phộng</p>
+                            <span class="price">59,000 Đ</span>
+                        </a>
+                    </div>
+                    <div class="col-4 col-sm-4">
+                        <a href="#">
+                            <img src="images/Dừa-kem-đậu-phộng-lớn.png">
+                            <p class="itemTitle">Dừa Kem Đậu Phộng</p>
+                            <span class="price">59,000 Đ</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="section2" class="block_menu_item">
+                <h2>Đặc Sản Tại Cộng</h2>
+                <div class="row">
+                    <div class="col-4 col-sm-4">
+                        <a href="#">
+                            <img src="images/cốt-dừa-cà-phê_lớn.png">
+                            <p class="itemTitle">Cốt Dừa Cà Phê</p>
+                            <span class="price">55,000 Đ</span>
+                        </a>
+                    </div>
+                    <div class="col-4 col-sm-4">
+                        <a href="#">
+                            <img src="images/cốt-dừa-cốm-xanh.jpg">
+                            <p class="itemTitle">Cốt Dừa Cốm Xanh</p>
+                            <span class="price">65,000 Đ</span>
+                        </a>
+                    </div>
+                    <div class="col-4 col-sm-4">
+                        <a href="#">
+                            <img src="images/cốt-dừa-đậu-xanh_1.jpg">
+                            <p class="itemTitle">Cốt Dừa Đậu Xanh</p>
+                            <span class="price">65,000 Đ</span>
+                        </a>
+                    </div>
+                    <div class="col-4 col-sm-4">
+                        <a href="#">
+                            <img src="images/cốt-dừa-cacao.jpg">
+                            <p class="itemTitle">Cốt Dừa CaCao</p>
+                            <span class="price">65,000 Đ</span>
+                        </a>
+                    </div>
+                </div>
+            </div>            
+            <div id="section3" class="block_menu_item">
+                <h2>Cà Phê Việt Nam</h2>
+                <div class="row">
+                    <div class="col-4 col-sm-4">
+                        <a href="#">
+                            <img src="images/Nâu-kem_600x600px.png">
+                            <p class="itemTitle">Nâu Kem Muối</p>
+                            <span class="price">45,000 Đ</span>
+                        </a>
+                    </div>
+                    <div class="col-4 col-sm-4">
+                        <a href="#">
+                            <img src="images/Bạc-xỉu-đá-size-lớn.png">
+                            <p class="itemTitle">Bạc Xỉu</p>
+                            <span class="price">45,000 Đ</span>
+                        </a>
+                    </div>
+                    <div class="col-4 col-sm-4">
+                        <a href="#">
+                            <img src="images/sữa-đá-sài-gòn_lớn.jpg">
+                            <p class="itemTitle">Sữa Đá Sài Gòn</p>
+                            <span class="price">41,000 Đ</span>
+                        </a>
+                    </div>
+                    <div class="col-4 col-sm-4">
+                        <a href="#">
+                            <img src="images/vina-cappu.jpg" alt="vina-cappu">
+                            <p class="itemTitle">Vina-cappuccino</p>
+                            <span class="price">41,000 Đ</span>
+                        </a>
+                    </div>
+                    <div class="col-4 col-sm-4">
+                        <a href="#">
+                            <img src="images/vina-latte.jpg">
+                            <p class="itemTitle">Vina-Latte</p>
+                            <span class="price">45,000 Đ</span>
+                        </a>
+                    </div>
+                    <div class="col-4 col-sm-4">
+                        <a href="#">
+                            <img src="images/vinacano-đá.jpg">
+                            <p class="itemTitle">Vina-Cano</p>
+                            <span class="price">35,000 Đ</span>
+                        </a>
+                    </div>
+                    <div class="col-4 col-sm-4">
+                        <a href="#">
+                            <img src="images/đen-đá_lớn.jpg">
+                            <p class="itemTitle">Đen</p>
+                            <span class="price">29,000 Đ</span>
+                        </a>
+                    </div>
+                    <div class="col-4 col-sm-4">
+                        <a href="#">
+                            <img src="images/nâu-đá_lớn.jpg">
+                            <p class="itemTitle">Nâu</p>
+                            <span class="price">35,000 Đ</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="section4" class="block_menu_item">
+                <h2>Trà Shan Tuyết Cổ Thụ</h2>
+                <div class="row">    
+                    <div class="col-4 col-sm-4">
+                        <a href="#">
+                            <img src="images/Shan-Tuyết-Nhài-Sữa.png">
+                            <p class="itemTitle">Shan Tuyết Nhài</p>
+                            <span class="price">39,000 Đ</span>
+                        </a>
+                    </div>
+                    <div class="col-4 col-sm-4">
+                        <a href="#">
+                            <img src="images/Shan-Tuyết-Quế-Sữa.png">
+                            <p class="itemTitle">SHAN TUYẾT QUẾ</p>
+                            <span class="price">39,000 Đ</span>
+                        </a>
+                    </div>
+                    <div class="col-4 col-sm-4">
+                        <a href="#">
+                            <img src="images/Trà-cúc.png">
+                            <p class="itemTitle">Trà Cúc</p>
+                            <span class="price">39,000 Đ</span>
+                        </a>
+                    </div>
+                    <div class="col-4 col-sm-4">
+                        <a href="#">
+                            <img src="images/Trà-nhài.png">
+                            <p class="itemTitle">Trà Nhài</p>
+                            <span class="price">39,000 Đ</span>
+                        </a>
+                    </div>
+                    <div class="col-4 col-sm-4">
+                        <a href="#">
+                            <img src="images/Trà-gừng.png">
+                            <p class="itemTitle">Trà Gừng</p>
+                            <span class="price">39,000 Đ</span>
+                        </a>
+                    </div>
+                    <div class="col-4 col-sm-4">
+                        <a href="#">
+                            <img src="images/Trà-Lam-nướng-đá-size-lớn_600x600px.png">
+                            <p class="itemTitle">Trà Lam Nướng Đá</p>
+                            <span class="price">45,000 Đ</span>
+                        </a>
+                    </div>
+                    <div class="col-4 col-sm-4">
+                        <a href="#">
+                            <img src="images/trà-tắc-chanh-leo.jpg">
+                            <p class="itemTitle">Trà Tắc Chanh Leo</p>
+                            <span class="price">45,000 Đ</span>
+                        </a>
+                    </div>
+                    <div class="col-4 col-sm-4">
+                        <a href="#">
+                            <img src="images/trà-cam-quế_đá-copy.jpg">
+                            <p class="itemTitle">Trà Cam Quế</p>
+                            <span class="price">45,000 Đ</span>
+                        </a>
+                    </div>
+                    <div class="col-4 col-sm-4">
+                        <a href="#">
+                            <img src="images/trà-phê-đá1.jpg">
+                            <p class="itemTitle">Trà Phê</p>
+                            <span class="price">39,000 Đ</span>
+                        </a>
+                    </div>
+                    <div class="col-4 col-sm-4">
+                        <a href="#">
+                            <img src="images/trà-quất-mật-ong_đá.jpg">
+                            <p class="itemTitle">Trà Quất Mật Ong</p>
+                            <span class="price">45,000 Đ</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="section5" class="block_menu_item">
+                <h2>Đồ Uống Địa Phương</h2>
+                <div class="row">
+                    <div class="col-4 col-sm-4">
+                        <a href="#">
+                            <img src="images/cacao-quế_nóng.jpg">
+                            <p class="itemTitle">CaCao Quế</p>
+                            <span class="price">59,000 Đ</span>
+                        </a>
+                    </div>
+                    <div class="col-4 col-sm-4">
+                        <a href="#">
+                            <img src="images/hanoi-sau-soda.jpg">
+                            <p class="itemTitle">HÀ NỘI SẤU SODA</p>
+                            <span class="price">55,000 Đ</span>
+                        </a>
+                    </div>
+                    <div class="col-4 col-sm-4">
+                        <a href="#">
+                            <img src="images/sài-gòn-tắc-xí-muội.jpg">
+                            <p class="itemTitle">SÀI GÒN TẮC XÍ MUỘI</p>
+                            <span class="price">45,000 Đ</span>
+                        </a>
+                    </div>
+                    <div class="col-4 col-sm-4">
+                        <a href="#">
+                            <img src="images/đà-nẵng-chanh-muối-soda.jpg">
+                            <p class="itemTitle">ĐÀ NẴNG CHANH MUỐI SODA</p>
+                            <span class="price">55,000 Đ</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="section6" class="block_menu_item">
+                <h2>Khỏe - Đẹp</h2>
+                <div class="row">
+                    <div class="col-4 col-sm-4">
+                        <a href="#">
+                            <img src="images/chanh-leo-tuyết.jpg">
+                            <p class="itemTitle">Chanh Leo Tuyết</p>
+                            <span class="price">59,000 Đ</span>
+                        </a>
+                    </div>
+                    <div class="col-4 col-sm-4">
+                        <a href="#">
+                            <img src="images/MicrosoftTeams-image-3.png">
+                            <p class="itemTitle">Sữa Chua Trái Cây</p>
+                            <span class="price">59,000 Đ</span>
+                        </a>
+                    </div>
+                    <div class="col-4 col-sm-4">
+                        <a href="#">
+                            <img src="images/cóc-xanh.jpg">
+                            <p class="itemTitle">Cóc xanh</p>
+                            <span class="price">59,000 Đ</span>
+                        </a>
+                    </div>
+                    <div class="col-4 col-sm-4">
+                        <a href="#">
+                            <img src="images/schua-cacao-copy.jpg">
+                            <p class="itemTitle">Sữa Chua CaCao</p>
+                            <span class="price">45,000 Đ</span>
+                        </a>
+                    </div>
+                    <div class="col-4 col-sm-4">
+                        <a href="#">
+                            <img src="images/chanh-tươi.jpg">
+                            <p class="itemTitle">Chanh Tươi</p>
+                            <span class="price">39,000 Đ</span>
+                        </a>
+                    </div>
+                    <div class="col-4 col-sm-4">
+                        <a href="#">
+                            <img src="images/sữa-chua-cà-phê.jpg">
+                            <p class="itemTitle">Sữa Chua Cà Phê</p>
+                            <span class="price">45,000 Đ</span>
+                        </a>
+                    </div>
+                    <div class="col-4 col-sm-4">
+                        <a href="#">
+                            <img src="images/dưa-hấu.jpg">
+                            <p class="itemTitle">Dưa Hấu</p>
+                            <span class="price">59,000 Đ</span>
+                        </a>
+                    </div>
+                    <div class="col-4 col-sm-4">
+                        <a href="#">
+                            <img src="images/schua-đánh-đá.jpg">
+                            <p class="itemTitle">Sữa Chua Đá</p>
+                            <span class="price">39,000 Đ</span>
+                        </a>
+                    </div>
+                    <div class="col-4 col-sm-4">
+                        <a href="#">
+                            <img src="images/chanh-leo.jpg">
+                            <p class="itemTitle">Chanh Leo</p>
+                            <span class="price">49,000 Đ</span>
+                        </a>
+                    </div>
+                    <div class="col-4 col-sm-4">
+                        <a href="#">
+                            <img src="images/cam.jpg">
+                            <p class="itemTitle">Cam</p>
+                            <span class="price">65,000 Đ</span>
+                        </a>
+                    </div>
+                    <div class="col-4 col-sm-4">
+                        <a href="#">
+                            <img src="images/sinh-tố-xoài.jpg">
+                            <p class="itemTitle">Sinh Tố Xoài</p>
+                            <span class="price">65,000 Đ</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="section7" class="block_menu_item">
+                <h2>Topping</h2>
+                <div class="row">
+                    <div class="col-4 col-sm-4">
+                        <a href="#">
+                            <img src="images/Macchiato.png">
+                            <p class="itemTitle">Kem Sữa</p>
+                            <span class="price">8,000 Đ</span>
+                        </a>
+                    </div>
+                    <div class="col-4 col-sm-4">
+                        <a href="#">
+                            <img src="images/trân-châu-trắng.jpg">
+                            <p class="itemTitle">Trân Châu Trắng</p>
+                            <span class="price">8,000 Đ</span>
+                        </a>
+                    </div>
+                    <div class="col-4 col-sm-4">
+                        <a href="#">
+                            <img src="images/thach-tra.jpg">
+                            <p class="itemTitle">Thạch Trà</p>
+                            <span class="price">8,000 Đ</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="section8" class="block_menu_item">
+                <h2>Đồ Ăn Chơi</h2>
+                <div class="row">
+                    <div class="col-4 col-sm-4">
+                        <a href="#">
+                            <img src="images/xoài-sấy-dẻo.jpg">
+                            <p class="itemTitle">Xoài Sấy Dẻo</p>
+                            <span class="price">35,000 Đ</span>
+                        </a>
+                    </div>
+                    <div class="col-4 col-sm-4">
+                        <a href="#">
+                            <img src="images/hướng-dương.jpg">
+                            <p class="itemTitle">Hạt Hướng Dương</p>
+                            <span class="price">25,000 Đ</span>
+                        </a>
+                    </div>
+                    <div class="col-4 col-sm-4">
+                        <a href="#">
+                            <img src="images/ngô-cay.jpg">
+                            <p class="itemTitle">Ngô Cay</p>
+                            <span class="price">25,000 Đ</span>
+                        </a>
+                    </div>
+                    <div class="col-4 col-sm-4">
+                        <a href="#">
+                            <img src="images/mỳ-tôm-trứng-bò-khô.jpg">
+                            <p class="itemTitle">Mì tôm trứng bò khô</p>
+                            <span class="price">55,000 Đ</span>
+                        </a>
+                    </div>
+                    <div class="col-4 col-sm-4">
+                        <a href="#">
+                            <img src="images/bánh-sừng-bò.jpg">
+                            <p class="itemTitle">Bánh sừng bò chấm sữa</p>
+                            <span class="price">30,000 Đ</span>
+                        </a>
+                    </div>
+                    <div class="col-4 col-sm-4">
+                        <a href="#">
+                            <img src="images/thịt-bò-khô.jpg">
+                            <p class="itemTitle">Thịt Bò Khô</p>
+                            <span class="price">45,000 Đ</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="footer">
+        <div class="social-list">
+            <div class="social-list-inner">
+                <div class="left-social">
+                    <p>KÊNH KẾT NỐI</p>
+                    <div class="contact-icon">
+                        <a href="#" class="social-icon">
+                            <svg fill="#507820" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"/></svg>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <svg fill="#507820" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <svg fill="#507820" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"/></svg>
+                        </a>
+                    </div>
+                    <img src="congthuong.png" alt="Cong thuong">
+                </div>
+                <div class="right-social">
+                    <p>LUÔN CẬP NHẬT</p>
+                    <p>Về các tin tức đó đây, sản phẩm mới</p>
+                    <form id="subForm">
+                        <div class="form-wrapper">
+                            <input placeholder="Email" type="email" class="input-box">
+                            <button type="submit" class="subButton">Đăng ký</button>
+                        </div>
+                    </form>
+                    <p>Chúng tôi tôn trọng quyền riêng tư của bạn</p>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="copyright-inner">
+                <p>Công ty TNHH Cộng Cà Phê</p>
+                <p>Mã số DN: 0106696845 do Sở Kế hoạch và Đầu tư TP. Hà Nội cấp ngày 21/11/2014</p>
+                <div>
+                    <p>Địa chỉ: Số 101 Hoàng Cầu, phường Ô Chợ Dừa, quận Đống Đa, Hà Nội&nbsp;</p>
+                    <p>- Số điện thoại: +84 243 733 9966&nbsp; </p>
+                    <p>- Email: info@congcaphe.com</p>
+                </div>
+                
+                <p>&#169;2017 - 2024 CÔNG TY TNHH Cộng Cà Phê Mọi quyền được bảo lưu</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
