@@ -37,22 +37,11 @@
     src: url(./assets/fonts/BeauLuloClean-OneBold-4ce34c0eaf26a1818d6dc4bae56dbaf8.otf);
 }
 
-@media only screen and (max-width: 786px) {
+@media only screen and (max-width: 992px) {
     .m-header{
         z-index: 100;
     }
-    .Pichome .carousel-item{
-        padding-bottom: 0;
-    }
-
-    .Pichome .carousel-item .carousel-caption h3{
-        font-size: 16px;
-    }
-
-    .Pichome .carousel-item .carousel-caption p{
-        display: none;
-    }
-
+    
     .content .story{
         padding: 40px 0;
     }
@@ -61,12 +50,15 @@
         display: none;
     }
 
-    .card {
-        padding: 10px 0;
-    }
-
     .content .card-body{
         height: auto;
+        opacity: 0.8;
+    }
+
+    .Home-main .story .card .card-body{
+        background-color: #FFF2D5;
+        opacity: 0.9;
+    
     }
 
     .content .leftTxt .card-body{
@@ -99,74 +91,101 @@
     div.footer-se{
         display: none;
     }
-    
 
-    
 }
 
-/* content appear here */
+@media only screen and(max-with: 768px){
+    .row .card{
+        margin: 10px 0;
+    } 
 
-.carousel-caption {
-    position: static !important;
-    background-color:#FFF2D5;
-    text-align: center;
-    opacity: 90%;
+
+    .container-se .story{
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+}
+
+
+/* code here */
+
+a{
+    color: #555555 !important;
+}
+
+.carousel-inner .carousel-caption{
+    background-color: #EAE0C2;
     width: 100%;
-    
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding-bottom: 0;
+    color: #555555;
 }
-
-.carousel-caption h3, .carousel-caption p{
-    color: #555555;    
-}
-
-.carousel-caption h3{
-    font-size: 30px;
+.carousel-inner .carousel-caption h5{
+    width: 80%;
     font-weight: bold;
+    font-size: 25px;
+    margin: 0 10%;;
 }
 
-.carousel-caption p{
-    margin: 0 auto;
-    width: 70%;
+.carousel-inner .carousel-caption p{
+    width: 60%;
+    margin: 0 20%;
+}
+
+.carousel-inner .carousel-caption a{
+    color: #94A078;
+    text-decoration: underline ;
     font-size: 14px;
+    margin-left: 70%;
 }
 
-.carousel-item{
-    padding-bottom: 120px;
+.Home-main{
+    margin-top: 50px;
+    width: 100%;
+    padding: 0 10px;
 }
 
-/* Section */
-
-.card-title{
-    background-color: #FFF2D5;
-    position: relative;
-
+section.content{
+    width: 80%;
+    margin: 0 10%;
 }
 
-.story{
-    background-size: cover;
-    padding: 100px 0;
-    color: #fff;
+.container-se .story{
+    margin-bottom: 20px;
 }
 
-.card {
-    display: block;
-    border: none;
+.card{
     background-color: transparent;
 }
 
-.card img {
+
+.card .bcolor{
+    background-color: #FFF2D5;
+    opacity: 0.9;
     width: 100%;
-    height: auto;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
-.card-text{
-    margin-bottom: 0;
+.story .card .card-body{
+    background-color: transparent;
+}
+
+.card:hover .bcolor{
+    opacity: 0;
+}
+
+.card:hover .card-body{
+    background-color: #FFF2D5;
+    opacity: 0.9;
 }
 
 .card .card-body{
-    color: #666666;
-}
-.card-body {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -176,53 +195,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #FFF2D5;
-    opacity: 90%;
     padding: 10px;
     line-height: 1.7;
+    background-color: #FFF2D5 ; 
+    opacity: 0.9;
 }
 
-
-.card:hover .bcolor{
-    opacity: 0;
-}
-
-.story .card:hover .card-body{
-    background-color: #FFF2D5;
-    opacity: 1;
-}
-
-
-.card-body h6{
-    content: " ";
-    left: 50%;
-    bottom: -5px;
-    width: 70px;
-    height: 4px;
-    background: #555555;
-}
-
-.bcolor{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #FFF2D5; /* Màu phủ: màu vàng với độ mờ */
-    opacity: 90%;
-    /* transition: opacity 0.5s ease; */
-}
-.card-title {
-    display: contents;
-    font-size: 1.5em;
+.card .card-title{
+    font-size: 20px;
     font-weight: bold;
-    text-transform: uppercase;
-    color: #666666;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 10px 20px; /* Tạo khoảng cách cho chữ */
+    margin: 0;
 }
 
 .leftTxt .card-body{
@@ -230,21 +212,34 @@
     top: 50%;
     left: 0;
     transform: translateY(-50%);
-    background-color:#FFF2D5 ; /* Màu nền với độ mờ */
+    background-color:#FFF2D5 ;
     padding: 20px;
-    max-width: 50%; /* Đảm bảo hiển thị nội dung chiếm nửa trái của ảnh */
+    max-width: 50%;
     height: 100%;
     transition: all 0.5s ease; /* Hiệu ứng chuyển động */
-    
 }
 
 .card:hover .card-body{
     left: 50%;
 }
 
+.card-body h6{
+    content:"";
+    background: #555555;
+    height: 4px;
+    width: 70px;
+
+}
+
 .reCard .card-body{
     width: 50%;
-    height: 50%;
+    height: 60%;
+    color: #555555;
+}
+
+.Home-main .card-text{
+    margin-bottom: 0;
+    font-size: 13px;
 }
 
 /* General styling for the footer */
@@ -255,7 +250,7 @@
     justify-content: space-around; /* Align categories */
     font-family: 'Arial', sans-serif;
     margin: 0 auto;
-    width: 100%;
+    width: 100%
 }
 
 .footer-se h4 {
