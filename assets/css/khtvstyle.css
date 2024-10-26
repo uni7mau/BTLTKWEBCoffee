@@ -407,6 +407,7 @@ input, button {
 }
 
 #CTKM .carousel-item {
+    display: none;
 }
 
 #CTKM .carousel-item img {
