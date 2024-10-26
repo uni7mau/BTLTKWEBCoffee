@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đó đây</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../assets/css/headfootstyle.css">
+    <link rel="stylesheet" href="../../../assets/css/phachestyle.css">
+</head>
+<body>
+    <div class="m-header">
+        <div class="m-header-inner">
+            <div id="mb-menu-i" class="menu-icon" onclick="changeSidebar()">
+                <div class="bar1 bar"></div>
+                <div class="bar2 bar"></div>
+                <div class="bar3 bar"></div>
+            </div>
+            <div class="header-middle">
+                <a href="../../../index.html">
+                    <img src="../../../assets/images/logo.png" alt="Logo">
+                </a>
+            </div>
+            <div class="language-change">
+                <div class="appear-language-flag">
+                    <img src="../../../assets/images/vn-flag.png" alt="Flag img">
+                </div>
+                <div class="language-dialog">
+                    <div class="l-option">
+                        <img src="../../../assets/images/vn-flag.png" alt="Flag img">
+                    </div>
+                    <div class="l-option">
+                        <svg fill="#3d5e2c" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M352 256c0 22.2-1.2 43.6-3.3 64l-185.3 0c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64l185.3 0c2.2 20.4 3.3 41.8 3.3 64zm28.8-64l123.1 0c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64l-123.1 0c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64zm112.6-32l-116.7 0c-10-63.9-29.8-117.4-55.3-151.6c78.3 20.7 142 77.5 171.9 151.6zm-149.1 0l-176.6 0c6.1-36.4 15.5-68.6 27-94.7c10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5c11.6 26 20.9 58.2 27 94.7zm-209 0L18.6 160C48.6 85.9 112.2 29.1 190.6 8.4C165.1 42.6 145.3 96.1 135.3 160zM8.1 192l123.1 0c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64L8.1 320C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64zM194.7 446.6c-11.6-26-20.9-58.2-27-94.6l176.6 0c-6.1 36.4-15.5 68.6-27 94.6c-10.5 23.6-22.2 40.7-33.5 51.5C272.6 508.8 263.3 512 256 512s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6C112.2 482.9 48.6 426.1 18.6 352l116.7 0zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6c25.5-34.2 45.2-87.7 55.3-151.6l116.7 0z"/></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="computer-header">
+        <div class="header-inner">
+            <div class="header-left">
+                <div class="nav-cell">
+                    <a href="../page/gioithieu.html" class="header-nav-link">CÂU CHUYỆN</a>
+                </div>
+                <div class="nav-cell">
+                    <a href="../posts/tintuc.html" class="header-nav-link">BẢNG TIN</a>
+                    <div class="header-dialog">
+                        <div class="dialog-cell">
+                            <a href="../posts/khtv.html" class="dialog-link">Chính sách KHTV</a>
+                        </div>
+                        <div class="dialog-cell">
+                            <a href="../posts/tintuc.html" class="dialog-link">Tin Tức</a>
+                        </div>
+                        <div class="dialog-cell">
+                            <a href="../posts/hoptac.html" class="dialog-link">Hợp Tác</a>
+                        </div>
+                        <div class="dialog-cell">
+                            <a href="../posts/doday.html" class="dialog-link">Đó Đây</a>
+                        </div>
+                        <div class="dialog-cell">
+                            <a href="../posts/phache.html" class="dialog-link">Pha Chế</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-cell">
+                    <a href="../menu/thucdon.html" class="header-nav-link">THỰC ĐƠN</a>
+                </div>
+            </div>
+            <div class="header-middle">
+                <a href="../../../index.html">
+                    <img src="../../../assets/images/logo.png" alt="Logo">
+                </a>
+            </div>
+            <div class="header-right">
+                <div class="nav-cell">
+                    <a href="../shop/quaymaudich.html" class="header-nav-link">QUẦY MẬU DỊCH</a>
+                </div>
+                <div class="nav-cell">
+                    <a href="../stores/cuahang.html" class="header-nav-link">CỬA HÀNG</a>
+                </div>
+                <div class="nav-cell">
+                    <a href="../contact/lienhe.html" class="header-nav-link">LIÊN HỆ</a>
+                    <div class="header-dialog">
+                        <div class="dialog-cell">
+                            <a href="../contact/tuyendung.html" class="dialog-link">Tuyển Dụng</a>
+                        </div>
+                        <div class="dialog-cell">
+                            <a href="../contact/langnghe.html" class="dialog-link">Cộng Lắng Nghe</a>
+                        </div>
+                        <div class="dialog-cell">
+                            <a href="../page/gioithieu.html" class="dialog-link">Về Chúng Tôi</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="language-change">
+                <div class="appear-language-flag">
+                    <img src="../../../assets/images/vn-flag.png" alt="Flag img">
+                </div>
+                <div class="language-dialog">
+                    <div class="l-option">
+                        <img src="../../../assets/images/vn-flag.png" alt="Flag img">
+                    </div>
+                    <div class="l-option">
+                        <svg fill="#3d5e2c" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M352 256c0 22.2-1.2 43.6-3.3 64l-185.3 0c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64l185.3 0c2.2 20.4 3.3 41.8 3.3 64zm28.8-64l123.1 0c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64l-123.1 0c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64zm112.6-32l-116.7 0c-10-63.9-29.8-117.4-55.3-151.6c78.3 20.7 142 77.5 171.9 151.6zm-149.1 0l-176.6 0c6.1-36.4 15.5-68.6 27-94.7c10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5c11.6 26 20.9 58.2 27 94.7zm-209 0L18.6 160C48.6 85.9 112.2 29.1 190.6 8.4C165.1 42.6 145.3 96.1 135.3 160zM8.1 192l123.1 0c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64L8.1 320C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64zM194.7 446.6c-11.6-26-20.9-58.2-27-94.6l176.6 0c-6.1 36.4-15.5 68.6-27 94.6c-10.5 23.6-22.2 40.7-33.5 51.5C272.6 508.8 263.3 512 256 512s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6C112.2 482.9 48.6 426.1 18.6 352l116.7 0zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6c25.5-34.2 45.2-87.7 55.3-151.6l116.7 0z"/></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container1">
+        <div class="mobile-sidebar">
+            <div class="sidebar-inner">
+                <div class="side-cell">
+                    <a href="../page/gioithieu.html">CÂU CHUYỆN</a>
+                </div>
+                <div class="side-cell">
+                    <button class="dropdown-btn" onclick=toogleSubMenu(this)>
+                        <a href="../posts/tintuc.html">BẢNG TIN</a>
+                        <div class="icon-touchable-box">
+                            <svg fill="#4c5b29" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg>
+                        </div>
+                    </button>
+                    <div class="side-dialog">
+                        <div>
+                            <div class="dialog-cell">
+                                <a href="../posts/khtv.html" class="dialog-link">Chính sách KHTV</a>
+                            </div>
+                            <div class="dialog-cell">
+                                <a href="../posts/tintuc.html" class="dialog-link">Tin Tức</a>
+                            </div>
+                            <div class="dialog-cell">
+                                <a href="../posts/hoptac.html" class="dialog-link">Hợp Tác</a>
+                            </div>
+                            <div class="dialog-cell">
+                                <a href="../posts/doday.html" class="dialog-link">Đó Đây</a>
+                            </div>
+                            <div class="dialog-cell">
+                                <a href="../posts/phache.html" class="dialog-link">Pha Chế</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="side-cell">
+                    <a href="../menu/thucdon.html">THỰC ĐƠN</a>
+                </div>
+                <div class="side-cell">
+                    <a href="../shop/quaymaudich.html">QUẦY MẬU DỊCH</a>
+                </div>
+                <div class="side-cell">
+                    <a href="../stores/cuahang.html">CỬA HÀNG</a>
+                </div>   
+                <div class="side-cell">
+                    <button class="dropdown-btn" onclick=toogleSubMenu(this)>
+                        <a href="../contact/lienhe.html">LIÊN HỆ</a>
+                        <div class="icon-touchable-box">
+                            <svg fill="#4c5b29" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/></svg>
+                        </div>
+                    </button>
+                    <div class="side-dialog">
+                        <div class="side-dialog-wrapper">
+                            <div class="dialog-cell">
+                                <a href="../contact/tuyendung.html" class="dialog-link">Tuyển Dụng</a>
+                            </div>
+                            <div class="dialog-cell">
+                                <a href="../contact/langnghe.html" class="dialog-link">Cộng Lắng Nghe</a>
+                            </div>
+                            <div class="dialog-cell">
+                                <a href="../page/gioithieu.html" class="dialog-link">Về Chúng Tôi</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- content appear here -->
+        <div class="container">
+            <div class="col-md-12 col-lg-8 columnLeft">
+                <h1>CHUYỆN TRONG QUÁN CÀ PHÊ: NGỒI CÓC, CÀ PHÊ</h1>
+                <div class="d-flex justify-content-center btn">
+                    <circle cx="32" cy="32" r="31" fill="#3b5998"></circle>
+                    <div class="kc" style="width: 20px; height: 20px;">
+                        <svg viewBox="0 0 64 64" width="20" height="20" class="social-icon social-icon--facebook ">
+                            <g><circle cx="32" cy="32" r="31" fill="#3b5998"></circle></g>
+                            <g><path d="M34.1,47V33.3h4.6l0.7-5.3h-5.3v-3.4c0-1.5,0.4-2.6,2.6-2.6l2.8,0v-4.8c-0.5-0.1-2.2-0.2-4.1-0.2 c-4.1,0-6.9,2.5-6.9,7V28H24v5.3h4.6V47H34.1z" fill="white"></path></g>
+                        </svg>
+                    </div>
+                    <div class="kc" role="button" tabindex="0" class="SocialMediaShareButton SocialMediaShareButton--googlePlus">
+                        <div style="width: 20px; height: 20px;">
+                            <svg viewBox="0 0 64 64" width="20" height="20" class="social-icon social-icon--google "><g>
+                                <circle cx="32" cy="32" r="31" fill="#dd4b39"></circle></g>
+                                <g><path d="M25.3,30.1v3.8h6.3c-0.3,1.6-1.9,4.8-6.3,4.8c-3.8,0-6.9-3.1-6.9-7s3.1-7,6.9-7c2.2,0,3.6,0.9,4.4,1.7l3-2.9c-1.9-1.8-4.4-2.9-7.4-2.9c-6.1,0-11.1,5-11.1,11.1s5,11.1,11.1,11.1c6.4,0,10.7-4.5,10.7-10.9c0-0.7-0.1-1.3-0.2-1.8H25.3L25.3,30.1z M49.8,28.9h-3.2v-3.2h-3.2v3.2h-3.2v3.2h3.2v3.2h3.2v-3.2h3.2" fill="white"></path></g>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="kc" style="width: 20px; height: 20px;">
+                        <svg viewBox="0 0 64 64" width="20" height="20" class="social-icon social-icon--pinterest ">
+                            <g><circle cx="32" cy="32" r="31" fill="#cb2128"></circle></g>
+                            <g><path d="M32,16c-8.8,0-16,7.2-16,16c0,6.6,3.9,12.2,9.6,14.7c0-1.1,0-2.5,0.3-3.7 c0.3-1.3,2.1-8.7,2.1-8.7s-0.5-1-0.5-2.5c0-2.4,1.4-4.1,3.1-4.1c1.5,0,2.2,1.1,2.2,2.4c0,1.5-0.9,3.7-1.4,5.7 c-0.4,1.7,0.9,3.1,2.5,3.1c3,0,5.1-3.9,5.1-8.5c0-3.5-2.4-6.1-6.7-6.1c-4.9,0-7.9,3.6-7.9,7.7c0,1.4,0.4,2.4,1.1,3.1 c0.3,0.3,0.3,0.5,0.2,0.9c-0.1,0.3-0.3,1-0.3,1.3c-0.1,0.4-0.4,0.6-0.8,0.4c-2.2-0.9-3.3-3.4-3.3-6.1c0-4.5,3.8-10,11.4-10 c6.1,0,10.1,4.4,10.1,9.2c0,6.3-3.5,11-8.6,11c-1.7,0-3.4-0.9-3.9-2c0,0-0.9,3.7-1.1,4.4c-0.3,1.2-1,2.5-1.6,3.4 c1.4,0.4,3,0.7,4.5,0.7c8.8,0,16-7.2,16-16C48,23.2,40.8,16,32,16z" fill="white"></path></g>
+                        </svg>
+                    </div>
+                    <div class="kc" style="width: 20px; height: 20px;">
+                        <svg viewBox="0 0 64 64" width="20" height="20" class="social-icon social-icon--twitter ">
+                            <g><circle cx="32" cy="32" r="31" fill="#00aced"></circle></g>
+                            <g><path d="M48,22.1c-1.2,0.5-2.4,0.9-3.8,1c1.4-0.8,2.4-2.1,2.9-3.6c-1.3,0.8-2.7,1.3-4.2,1.6 C41.7,19.8,40,19,38.2,19c-3.6,0-6.6,2.9-6.6,6.6c0,0.5,0.1,1,0.2,1.5c-5.5-0.3-10.3-2.9-13.5-6.9c-0.6,1-0.9,2.1-0.9,3.3 c0,2.3,1.2,4.3,2.9,5.5c-1.1,0-2.1-0.3-3-0.8c0,0,0,0.1,0,0.1c0,3.2,2.3,5.8,5.3,6.4c-0.6,0.1-1.1,0.2-1.7,0.2c-0.4,0-0.8,0-1.2-0.1 c0.8,2.6,3.3,4.5,6.1,4.6c-2.2,1.8-5.1,2.8-8.2,2.8c-0.5,0-1.1,0-1.6-0.1c2.9,1.9,6.4,2.9,10.1,2.9c12.1,0,18.7-10,18.7-18.7 c0-0.3,0-0.6,0-0.8C46,24.5,47.1,23.4,48,22.1z" fill="white"></path></g>
+                        </svg>
+                    </div>
+                    <div class="kc" style="width: 20px; height: 20px;">
+                        <svg viewBox="0 0 64 64" width="20" height="20" class="social-icon social-icon--linkedin ">
+                            <g><circle cx="32" cy="32" r="31" fill="#007fb1"></circle></g>
+                            <g><path d="M20.4,44h5.4V26.6h-5.4V44z M23.1,18c-1.7,0-3.1,1.4-3.1,3.1c0,1.7,1.4,3.1,3.1,3.1 c1.7,0,3.1-1.4,3.1-3.1C26.2,19.4,24.8,18,23.1,18z M39.5,26.2c-2.6,0-4.4,1.4-5.1,2.8h-0.1v-2.4h-5.2V44h5.4v-8.6 c0-2.3,0.4-4.5,3.2-4.5c2.8,0,2.8,2.6,2.8,4.6V44H46v-9.5C46,29.8,45,26.2,39.5,26.2z" fill="white"></path></g>
+                        </svg>
+                    </div>
+                </div>
+                <div class="content">
+                    <p><br></p>
+                    <img src="../../../assets/images/phache/chuyentrongquan.jpg" alt="" width="95%" >
+                    <p>
+                        <br>
+                        Ở ta, trong nhiều trường hợp, những cuộc tranh luận về danh xưng thường dễ rơi vào vô bổ. Sống đã, giải nghĩa và triết lý sau, cho nên, không cứ gì bận tâm khổ sở tìm kiếm nguồn gốc chính xác một tên gọi mới mong thấu tận tinh thần của sự việc. Ở một nơi càng lắm sự mờ ám, thiếu chính danh thì đỡ bàn tán về danh xưng, càng tránh được cơ nguy sa vào sự suy diễn rối tinh rối mù. Vậy, có một cách khác hay ho hơn nhiều: hãy ngồi cà phê cóc để luận về chính nó.
+                    </p>
+                   
+                    <p>Về khoa học luận mà nói, lấy ngôn ngữ để bàn về chính ngôn ngữ thì gọi là siêu ngôn ngữ, lấy khoa học để bàn về chính khoa học thì gọi là siêu khoa học, vậy tự hỏi, ngồi cà phê cóc để luận về cà phê cóc thì gọi nó là gì, không lẽ là siêu… cà phê cóc!?</p>
+                    <p>Có 3 giả thiết về nguồn gốc tên gọi cà phê cóc:</p>
+                    <p>1. quán có ghế thấp, khách đến quán ưa ngồi tư thế hơi chồm hổm, bạ bệt, la liệt như một bầy cóc trước hang nên gọi chung các loại quán ven đường này là quán cóc.</p>
+                    <p>2. cách pha chế cà phê thường thấy: đặt phin lên cốc, nên có thành ngữ “cà phê nồi ngồi trên cốc”; từ “cốc”, qua thời gian, bị đọc trại đi thành ra “cóc”</p>
+                   
+                    <p>3. mô phỏng từ cóc trong tiếng lóc cóc (bàn ghế dọn ra dọn vào, tiếng muỗng đánh, khuấy cà phê) là âm thanh quen thuộc ở dạng quán này.</p>
+                    
+                    <p>Là gì thì chưa biết, song, kẻ nhàn rỗi viết bài này từng bỏ thời gian mê mẩn đọc đến vài ba chục bài báo của các nhà văn, nhà thơ, ký giả tên tuổi vẽ thêm cánh cho loại hình ẩm thực này và sau đó đi đến khẳng định chắc như đinh đóng cột rằng, cà phê cóc là một nét văn hóa đặc thù (thậm chí, là bản sắc văn hóa) của người Sài Gòn. Thơ ca, âm nhạc, mỹ thuật lấy cảm hứng tập trung mô tả, khai thác chủ đề này nhiều vô kể. Chỉ điều đó thôi, cũng đủ phủ lên loại không gian quán xá tự phát (trong cái đô thị trùng trùng tự phát này) một thứ ý nghĩa lộng lẫy mang đậm tinh thần bình dân chủ nghĩa, hoặc tranh thủ gắn cái với tập tính phồn tạp phóng túng và xộc xệch của nếp sống nơi đô thị phương Nam, hay dễ thấy nhất là lồng ghép đủ thứ mớ đời rối rắm được nâng tầm nhân sinh quan ẩm thực, nghe nhức cả mũi. Những nỗ lực đó đôi khi vừa đáng yêu vừa thật hài hước. Nhưng biết sao được, phải hết sức bình tĩnh để cảm thông cho căn bệnh sính chữ vốn là một biến chứng có tính lây truyền cao ở những xứ sở luôn sẵn mang đầy mặc cảm, ẩn ức về sự khan hiếm học thuật trong khi những nghiên cứu loại kháng sinh hữu hiệu để chữa trị chứng sính chữ lại chưa tìm ra.</p>
+                    
+                    <p>Trở lại câu chuyện. Có lẽ cà phê cóc cần được giải hoặc (ngõ hầu đưa nó thoát xác khỏi cái áo lãng mạn bay bổng cảm tính) trước khi trả về đúng cái diện mạo xộc xệch, nhếch nhác và giản đơn, vốn là tính cách phóng khoáng tự nhiên bất cần văn tự của nó, của cái cộng đồng sinh ra và hưởng thụ nó, để thấy nó không dễ gì đáp ứng cho cái thứ “bản sắc” quơ quào cốt chỉ thỏa mãn nguồn cơn cảm hứng tự tôn dân tộc thái quá.</p>
+                    
+                    <p>Ở góc độ lịch sử ẩm thực (nghe nghiêm trọng chưa!), có thể nói rằng, đây là một dạng quán sá có lịch sử rất lâu đời trong cuộc sống của cư dân đô thị Việt Nam. Cần lưu ý, tính cách của đô thị Việt Nam từ truyền thống đến hiện đại, bao giờ cũng chịu chi phối bởi xuất phát điểm đặc trưng nông nghiệp, nặng tính tự phát. Hình thái gốc đó của đô thị đã tác động trực tiếp lên nề nếp sinh hoạt ẩm thực tài tử, ngẫu hứng, trong đó có những mô hình dịch vụ tự phát, như quán xá vỉa hè.</p>
+                    <p>Năm 1475, quán cà phê đầu tiên trên thế giới ra đời ở thành đô Constantinople của đế quốc Ottoman (1453-1922), để rồi hơn một thế kỷ sau, từ Yemen, cà phê xuất khẩu sang châu Âu và khai sinh văn hóa cà phê tại các nước Anh, Pháp, Hà Lan… Điểm lại những gạch đầu dòng trong phả hệ cà phê thế giới để thấy rằng, trong ly cà phê hôm nay mà chúng ta tận hưởng hẳn không phải là thứ thuần chủng bản địa, mà mang rõ lai lịch của một cuộc du hành – tiếp biến văn hóa. Những người Pháp theo đạo Thiên Chúa đã đưa cà phê vào Việt Nam trong quá trình truyền đạo và hiện thực hóa giấc mơ thực dân từ những năm 1850. Hẳn, những điểm dừng đầu tiên là đô thị và sau đó, là tạo ra những đồn điền. Mãi đến nay, Việt Nam không hổ danh là một nước sản xuất cà phê đứng thứ 2 thế giới và có lẽ là quốc gia có cư dân uống cà phê cũng đông nhất thế giới (mỗi năm, thị trường bản địa tiêu thụ hết 10% trên 800 đến 1 triệu tấn lượng cà phê làm ra). Cũng như với trà, người Việt Nam uống cà phê để bay bổng, phiêu diêu chứ không cần lý trí hay nâng tầm lý thuyết hóa về nó.</p>
+                    <p>Nhưng từ cà phê truyền thống kiểu Pháp đến cà phê cóc của người Việt là một quãng xa của sự tiếp biến, bản địa hóa đầy ngoạn mục, đồng thời cũng mang dấu ấn nội sinh sâu sắc của những tiến trình biến đổi xã hội qua các đợt sóng đô thị hóa.</p>
+                    <p>Có thể ví văn hóa cà phê cóc Sài Gòn như thứ nhạc boléro của thị dân miền Nam, nó được sinh ra để sống với nhịp đập trái tim người nhập cư trong quá trình tự thích nghi để trở thành một thị dân đúng nghĩa. Trịnh Cung, một họa sĩ từng lăn lộn trong giới văn nghệ Sài Gòn trước 1975 nhận định, thói quen ngồi cà phê cóc của người đô thị Việt Nam thừa hưởng từ văn hóa cà phê vỉa hè của người Pháp. “Tuy nhiên – ông Cung phân tích – khi vào Sài Gòn, cà phê vỉa hè đã chia ra nhiều đẳng cấp khác nhau theo các giai tầng, địa vị xã hội của khách hàng thường lui tới. Ví dụ ngay trong giới văn nghệ, báo chí Sài Gòn lúc đó cũng có sự phân biệt: cà phê vỉa hè đẳng cấp cao thì có hành lang khách sạn Continental (ngồi ghế bành, ghế gỗ cao, ở trục đường trung tâm) trên đường Tự Do (nay là Đồng Khởi) dành cho những chủ báo, những tên tuổi có liên hệ mật thiết với các hãng thông tấn nước ngoài có uy thế về ngôn luận, học thuật. Dạng cà phê vỉa hè của những “gentleman” này, trở thành nơi đàm luận nghệ thuật, thời sự chính trị, tình hình thông tấn toàn cầu… chẳng khác các salon trung lưu trí thức tinh hoa ở phương Tây giữa thế kỷ XX là mấy. Người ta vẫn gọi đây là cà phê vỉa hè trung tâm Sài Gòn, ít ai dám tự ý dùng danh từ bình dân sặc mùi là “quán cóc” để gọi tên. Trong khi đó, giới ký giả địa phương, gần với quần chúng bình dân hơn lại thường ngồi la liệt ở những quán cóc  thứ thiệt trên góc đường Phạm Ngũ Lão – Bùi Viện, gần các tòa soạn nhựt trình thời đó. Đặc thù của dạng quán này là nằm trong khu lao động, nhếch nhác, không gian đầy vẻ bụi bặm, khách khứa đa dạng đẳng cấp nhưng nhìn chung thì đều ra vẻ năng động và dấn thân.</p>
+                    <p>Ông Cung còn kể chi tiết về cách pha chế cà phê độc đáo ở các quán này: cà phê được cho vào một túi vải bít tất rồi ngâm hoặc nấu sôi, ép nước, chế biến một lúc cho số nhiều, nên gọi là cà phê bít tất. Mỹ từ “cà phê bít tất” gắn với không gian quán cóc vỉa hè từ đó.</p>
+                    <p>Sau 1975, cùng với sự phai nhạt ảnh hưởng xã hội của giới trí thức, trung lưu, không gian cà phê vỉa hè sang trọng vang bóng một thời nơi những đường phố trung tâm cũng biến mất. Cho đến 20 năm sau đổi mới, với sự thúc đẩy của chính sách mở cửa thị trường, Việt Nam gia nhập tổ chức thương mại thế giới, chân dung giới doanh thương thoát khỏi sự nghi kỵ tư sản, người giàu không phải vào thiên đường trần gian bằng con lạc đà như trong Kinh Thánh nữa, mà có thể xuất hiện lồng lộng trên các mặt báo như những điển hình thành đạt, đóng góp cho sự thay đổi của xã hội mà trước hết là những đô thị. Theo đó, không gian ẩm thực sang trọng đáp ứng nhu cầu cho giới này trở lại trăm nhà đua tiếng. Người ta thấy hình ảnh những cà phê vỉa hè sang trọng ngày xưa xuất hiện trở lại trên các vị trí đắc địa của vỉa hè trung tâm Sài Gòn với một bầu không khí khác. Tính chất hào hoa lịch lãm pha trộn màu sắc trí thức với những giai thoại chính trị, thông tấn đầy huyền thoại năm xưa đã mất đi, thay vào đó, là ít nhiều sự đỏm dáng, lịch lãm theo cung cách giao thiệp sòng phẳng của tinh thần năng động thời mới. Không khỏi vô can với căn bệnh nhà giàu mới – chứng khoa trương phù phiếm, đẳng cấp sành điệu chọn những không gian quán sang vỉa hè làm “đất diễn” cho nên, những terrace, vỉa hè dưới những tòa nhà chọc trời ở trung tâm được xem là chốn lả lướt phù phiếm của giới chân dài ưởn ẹo vắt vẻo bên các đại gia tóc muối tiêu chải keo bóng mượt đi xe bạc tỉ (có nhiều thi sĩ viển vông gọi đây là dạng quán “cà phê nhan sắc”).</p>
+                    <p>Vì thế, những ai cố chấp, vào Highlands, Coffee Beans, NYCD trên vỉa hè đường Đồng Khởi, Nguyễn Du hay góc biệt thự Crêperies & Café trên đường Hàn Thuyên hôm nay, cố tìm chút “hơi hám” sinh khí trí thức vàng son Sài Gòn thời trước 75 thì chỉ chuốc thêm nỗi ngậm ngùi, chẳng khác Từ Thức về ngậm ngùi cố xứ. Tốt nhất là cứ hãy học cách yên thân nhấp ngụm cà phê kiểu Mỹ giữa cái nóng ba lăm độ vào sáng mùa hè và rửa mắt bằng mười ba chân dài trong một giờ. Giữa quán xá đường phố dạng này và sàn catwalk đôi khi hư thực khó mà phân biệt được!</p>
+                    <p>Trong khi đó, đúng là quan nhất thời dân vạn đại, đã khiêm cung mặc vào thân phận bơ vơ cùa kẻ nhập cư, cà phê cóc chung thủy với những thượng đế muôn đời tìm đất hứa. Cùng với nhạc boléro, cà phê cóc vỉa hè bình dân có mặt hồn nhiên và ngẫu hứng bất cứ lúc nào những thượng đế nhập cư có nỗi niềm.</p>
+                    <p>Có thể tả ngắn gọn vào nét đặc trưng của loại quán này: ghế nhựa thấp, bàn dã chiến, không bảng hiệu, không toilet để giải quyết những ẩn ức trong cơ chế bài tiết của hai quả thận. Cà phê cóc không cần giấy khai sanh, tên gọi, bởi nó là đứa con ngỗ ngược và hoang dại trong cuộc hôn phối giữa một nét ẩm thực của văn hóa cà phê của thực dân du nhập với sinh hoạt quán nước dân gian trong cộng đồng nông nghiệp của người bản xứ. Cộng gộp của bản tính mạnh mẽ ưa phiêu lưu và chinh phục của người cha dị chủng với sự giản dị trữ tình nhưng đầy tùy hứng thôn dã của người mẹ xuất thân thôn nữ, đứa con ấy đủ sức mạnh và sự nhạy cảm để thích ứng phố xá với một phẩm chất dấn thân, chịu chơi, bản năng đến độ không sự duy ý chí nào có thể “dọn” được. Một lai lịch đầy tính thơ và không lý gì nó không đẻ ra những nhà thơ băn khoăn tìm sinh phần hư vô của mình trong cái nghĩa lý lãng xẹt hay rối bời của đô thị. (Chắc rằng, trong tương lai, những người soạn lịch sử thơ ca đương đại Việt Nam rồi sẽ nhắc đến những không gian cà phê cóc là nơi khai sinh của những nhóm “thơ vỉa hè” đầy dấu ấn độc lập, hoang mang nối dòng hiện sinh bị đứt quãng trong tức tưởi. Hầu hết các tên tuổi thơ ca, nghệ sĩ vỉa hè Sài Gòn thời kỳ này đều có xuất phát điểm khá giống nhau – người nhập cư, “lập ngôn” và “lập nghiệp” trong thời kỳ lao đao với công cuộc mưu sinh khốc liệt ở đô thị – hẳn thế, có vẻ như thơ luôn ở cùng những tâm hồn có chút thôn dã chân thật và tinh thần… rất boléro!)</p>
+                    <p>Quá trình đô thị hóa diễn ra nhanh chóng vào những năm thập niên 80, 90 của thế kỷ XX và kéo dài sang thập niên đầu thế kỷ XXI đã làm thay đổi đời sống nông thôn. Trong khi đô thị đang kiêu hãnh tưởng mình nuốt chửng bờ xôi ruộng mật, thì gốc rễ nông thôn đang thực hiện quyền uy của mình, sàng lọc và âm thầm áp đặt những phẩm tính văn hóa lâu đời nhằm quy định trở lại hình ảnh của đô thị một cách sống động, tự nhiên và hoang dã nhất. Và thế giới đủ phẳng đến độ khiến cho cái đòn (và thói quen ngồi đòn gỗ) ở những quán nước nông thôn một hôm lột xác mà biến thành những chiếc ghế nhựa xanh đỏ được đặt dọc các hè phố cho người đời thủng thẳng vắt chân đọc nhật trình, ngắm phố xá hay tán dóc đủ thứ chuyện trên đời.</p>
+                    <p><br></p>
+                    <p>Quán cóc được sinh ra cho nhiều giới, nhưng có lẽ đa phần đối tượng khách hàng là những thị dân nhập cư nhàn rỗi, những người mà trong quá trình cọ xát với nhịp sống đô thị, đã luôn sẵn cơ chế đề kháng lại nguy cơ thương tích tâm lý, những cú sốc văn hóa mà đô thị mang lại. Họ có nhu cầu dừng chân ngồi lại, cần những khoảng nghỉ giữa đường ngược xuôi mưu sinh, muốn bảo dưỡng tâm hồn thơ mộng viển vông bên cạnh một nhu cầu khác hết sức mạnh mẽ – giao cảm tình thân khi nhịp sống bạc mặt có thể khiến biết bao mối quan hệ trở nên đóng băng hay rạn nứt…</p>
+                    <p>Rất dễ để lý giải rằng, vì sao những kẻ sành điệu quán cóc lại rất thích những góc quán tĩnh lặng mát mẻ, ở những góc đường đẹp, đủ một khoảng cách với dòng đường chính, nhưng lại đủ một tầm nhìn để nhận thấy sự náo nhiệt. Cái tâm thế vừa sẵn sàng tách ra bên lề để tìm lại một chút riêng tư, vừa sẵn sàng lao vào, thoát ra khỏi dòng chảy náo nhiệt hỗn độn vừa lại đày đọa bản ngã bằng cách chìm đi trong hỗn loạn ngờm ngợm những chân dung kia… Và đó là trạng thái “cóc-coffeecitizen”. Và, điều này cũng gần với sự trầm lặng nơi những cá nhân phản tư. Ở một thái cực khác, hài hước thay, nó lại rất gần với sự lắm điều nhiễu sự, thích đám đông và có thể ngồi hàng giờ chỉ để chém gió (nói bốc trời) khẳng định bản thân, phóng xả ảo tưởng. Dù là ở thái cực nào, thì quán cóc cũng sẵn sàng mở cửa đón khách với một sự gánh gồng hao hơi tổn sức. Khi mà sự bình đẳng trong đời sống xã hội càng hiếm hoi thì giá trị bình đẳng mà ly cà phê cóc vỉa hè có thể mang lại càng thỏa mãn và hấp dẫn với nhiều người. Thân phận ly cà phê (không xác định được thành phần cà phê xay hay bắp rang phụ gia), thân phận quán (không tên, chủ quán Khó xác định lai lịch, nay ở chỗ này có thể mai bị tuýt còi đi nơi khác) với thân phận khách đến (như đã nói, những kẻ đang trục trặc bản thể trước đời sống tốc độ ồ ạt và đầy rẫy phi lý vô phương giải mã).</p>
+                    <p>Điều này lý giải việc rất nhiều người ngồi quán cóc cho rằng họ không quan tâm đến chất lượng thức uống hay sự hợp pháp của cái chỗ ngồi. Thực ra, về mặt tâm lý tiêu dùng, họ đang mắc vào cái bẫy của sự phi lý trí, theo cách nói của Dan Ariely1 (1) (một trong những thứ tâm lý đặc thù ở những không gian thị trường tự phát). Tính phi lý trí thể hiện ở chỗ, khách hàng mua không gian không thuộc sở hữu của người bán. Việc giao dịch mua bán là một quá trình bắt tay đồng tình trong việc cùng nhau chiếm dụng không gian công cộng. Sự lây lan của tính phi lý trí liên hoàn này nghiễm nhiên được khỏa lấp bằng nguồn khoái cảm không hẳn từ giá cà phê, thức uống rẻ mà từ cảm giác thoải mái được tìm thấy một “góc sống”, “góc hít thở”, “chốn dừng chân” bình dị, thị dân nhiệt thành trong bạn sẽ nhắm mắt hưởng thụ cái khoái cảm của kẻ tìm thấy một chỗ bên lề đời sống, bên lề mọi quy tắc hay khế ước mới, để được tự do tự tại sống cho mình, cho những người có hành xử tương đồng.</p>
+                    <p>Những cái đầu vẫn chụm lại bên chiếc bàn nhỏ. Những bờ ranh trong công viên bạ bệt la liệt người. Những câu chuyện dài bất tận. Thế rồi một hôm, tôi nhận ra cái anh chàng khó tính ưa vặn vẹo lý sự trong tôi đi vắng.</p>
+                    <p>Tôi khuấy cái thứ nước đen loãng sủi bọt trong ly đá viên đang tan vội vàng và chợt thấy có một điều kỳ thú mới lạ trong cảm nhận về cà phê cóc. Tôi nhận ra đùi các cô gái đẹp trước mặt đều trở nên dài hơn ở góc nhìn thấp này. Chi tiết đắt giá đó khiến tôi nhớ đến những bộ phim độc đáo của đạo diễn lừng danh Nhật Bản Ozu Yasujiro, người luôn chọn góc máy thấp, ngang tầm ngồi của gười Nhật để kể chuyện thế giới. Góc máy và tiết tấu chậm và không gian tĩnh đó đã làm nên một tính cách điện ảnh đặc biệt khó lẫn. Đứng ở tư duy điện ảnh, tôi lại nhớ về tầm nhìn từ quán cà phê cóc và tự hỏi, nếu chọn một góc máy cho quán cà phê cóc Sài Gòn, thì chúng ta cho góc máy ở độ cao nào? Vì dụng ý nghệ thuật gì, thông điệp ra sao ngoài việc nhìn thấy các cô gái đi ngang qua đều có những cặp chân rất dài? Có một ý niệm hay mỹ cảm nào đó nằm bên dưới cái quyết định phi lý trí khi chúng ta tìm đến đây, ngồi miên man với một cuộc sống không được phép chậm lại và cũng không hẳn là nhanh, nơi mà chúng ta luôn thỏa hiệp và luôn kháng cự, luôn chống chọi và lại luôn thích nghi. Góc nhìn đời sống từ vị trí này sẽ khác gì khi ta đang nhập vào những vai trò khác trong đời sống? Vì sao người ta có thể đọc nhật trình rồi ngôn luận rất tự do ở quán cóc lại im thin thít và lặn mất tăm khi đứng trước những khuất tất trong công việc chỉ sau đó ít giờ?</p>
+                    <p>Câu hỏi đặt ra từ đầu, liệu ngồi cà phê cóc để bàn về chính cà phê cóc thì gọi là gì, có lẽ sẽ không được trả lời một cách thấu đáo theo kiểu cách của những người cố choàng lên nó một lớp áo văn hóa hay bản sắc. Bởi, nó chỉ đơn giản là một sự chuyển hóa thói quen từ không gian sống này sang không gian sống khác, từ phương thức sống này sang phương thức sống khác trong một xã hội có năng lực tự phát và phi lý trí cao.</p>
+                    <p>Bài viết này có lẽ không được lòng lắm với những ai coi thú cà phê cóc là một bản sắc của thị dân văn minh và cố gắng xóa đi dấu vết của những mối liên hệ gốc gác nông thôn (nếu có). Nhưng, cũng như cái huyễn tưởng về không khí dân chủ và trữ tình mà không gian quán xá mang lại, đây chỉ là một tiếng nói duy ý chí của một kẻ dở hơi, chọn một góc nhìn thấp bên lề dòng chảy rối mù nhộn nhịp kia hỉ để chong mắt tìm một cặp đùi trắng nõn nào đó đầy khiêu khích sẽ bước ngang qua.</p>
+                    <p>Mọi cặp đùi, đơn giản, đều có thể dài. Đó là trải nghiệm mà nền cộng hòa phi lý bình dân của cà phê cóc có thể cho không biếu không chúng ta.</p>
+                </div>
+                <div class="line"></div>
+                
+                <div class="blq">
+                    <h2>BÀI LIÊN QUAN</h2>
+                    <div class="post-box">
+                        <div class="row">
+                            <div class="image-container" class="col-sm-5">
+                                <a href="nguoihn.html">
+                                    <img src="../../../assets/images/phache/nguoihn.png" alt="">
+                                </a>
+                            </div>
+                            <div class="col-sm-7">
+                                <div class="meta">
+                                    <div class="entry-title">
+                                        <a href="nguoihn.html">
+                                            <h3>Cà phê với người Hà Nội</h3>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="post-box-excerpt">
+                                    <p>Nơi nào cũng có cà phê nhưng không cà phê nơi đâu giống cà phê ở Hà Nội. Như nếp sống của con người thủ đô, cà phê Hà Nội có vô số những trải nghiệm thú vị và đầy chiều sâu trong cách thưởng thức.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="line"></div>
+            
+                    <div class="post-box">
+                        <div class="row">
+                            <div class="image-container" class="col-sm-5">
+                                <a href="hn.html">
+                                    <img src="../../../assets/images/phache/hn.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="col-sm-7">
+                                <div class="meta">
+                                    <div class="entry-title">
+                                        <a href="hn.html">
+                                            <h3>Hà Nội, giọt cà phê hoài niệm</h3>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="post-box-excerpt">
+                                    <p>"Trong ký ức được nhiều thế hệ người Hà Nội truyền lưu, thành cổ đã có những quán cà phê từ rất sớm..."</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="line"></div>
+
+                    <div class="post-box">
+                        <div class="row">
+                            <div class="image-container" class="col-sm-5">
+                                <a href="1945.html">
+                                    <img src="../../../assets/images/phache/1945.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="col-sm-7">
+                                <div class="meta">
+                                    <div class="entry-title">
+                                        <a href="1945.html">
+                                            <h3>Quán cà phê Việt Nam thời trước 1945</h3>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="post-box-excerpt">
+                                    <p>Chúng ta biết rất ít về thời khởi đầu của những quán cà phê ở Việt Nam. Và bây giờ chúng ta cũng chẳng còn nhân chứng, vì nếu còn họ cũng trên trăm tuổi rồi.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="line"></div>
+
+                    <div class="post-box">
+                        <div class="row">
+                            <div class="image-container" class="col-sm-5">
+                                <a href="nhatki.html">
+                                    <img src="../../../assets/images/phache/nhatki.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="col-sm-7">
+                                <div class="meta">
+                                    <div class="entry-title">
+                                        <a href="nhatki.html">
+                                            <h3>Nhật kí: Cà phê đậm đà lịch sử</h3>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="post-box-excerpt">
+                                    <p>"Tôi đến với ... rất tình cờ nhưng như có sự sắp đặt từ trước. Mưa đầu tháng 8 cứ rả rích chẳng dứt cả ngày, chiều Hà Nội không chịu tối hẳn khiến cái gì cũng nhập nhoạng,..."</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="line"></div>
+            
+                </div>
+            </div>
+
+            <div class="col-sm-4 columnRight ">
+                <p class="heading">Phổ biến</p>
+                <div class="line1"></div>
+                <div>
+                    <div class="post-box">
+                        <div class="row">
+                            <div class="image-container1" class="col-sm-5">
+                                <a href="../tintuc/tuyendung.html">
+                                    <img src="../../../assets/images/phache/tuyendung.png" alt="" >
+                                </a>
+                            </div>
+                            <div class="col-sm-7 noidung ">
+                                <div class="meta">
+                                    <div class="entry-title">
+                                        <a href="../tintuc/tuyendung.html">
+                                            <h3>CỘNG CÀ PHÊ TUYỂN DỤNG CHUYÊN VIÊN NHÂN SỰ TỔNG HỢP</h3>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="line1"></div>
+                <div>
+                    <div class="post-box">
+                        <div class="row">
+                            <div class="image-container1" class="col-sm-5">
+                                <a href="../tintuc/dauphong.html">
+                                    <img src="../../../assets/images/phache/dauphong.jpg" alt="" >
+                                </a>
+                            </div>
+                            <div class="col-sm-7 noidung ">
+                                <div class="meta">
+                                    <div class="entry-title">
+                                        <a href="../tintuc/dauphong.html">
+                                            <h3>🥜🥜 AI ĐẬU PHỘNG ĐÊ... CỘNG BÁN ĐÂY!</h3>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="line1"></div>
+                <div>
+                    <div class="post-box">
+                        <div class="row">
+                            <div class="image-container1" class="col-sm-5">
+                                <a href="../tintuc/sinhnhat.html">
+                                    <img src="../../../assets/images/phache/sinhnhat.png" alt="" >
+                                </a>
+                            </div>
+                            <div class="col-sm-7 noidung ">
+                                <div class="meta">
+                                    <div class="entry-title">
+                                        <a href="../tintuc/sinhnhat.html">
+                                            <h3>🎉️🎉 LOA LOA, SẮP TỚI SINH NHẬT TUỔI 17 CỦA CỘNG RỒI ĐẤY!</h3>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="line1"></div>
+                <div>
+                    <div class="post-box">
+                        <div class="row">
+                            <div class="image-container1" class="col-sm-5">
+                                <a href="../tintuc/vanhanh.html">
+                                    <img src="../../../assets/images/phache/vanhanh.jpg" alt="" >
+                                </a>
+                            </div>
+                            <div class="col-sm-7 noidung ">
+                                <div class="meta">
+                                    <div class="entry-title">
+                                        <a href="../tintuc/vanhanh.html">
+                                            <h3>CỘNG QUỐC TẾ TUYỂN DỤNG CHUYÊN VIÊN VẬN HÀNH</h3>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="line1"></div>
+                <div>
+                    <div class="post-box">
+                        <div class="row">
+                            <div class="image-container1" class="col-sm-5">
+                                <a href="../tintuc/tuyendung1.html">
+                                    <img src="../../../assets/images/phache/tuyendung1.png" alt="" >
+                                </a>
+                            </div>
+                            <div class="col-sm-7 noidung ">
+                                <div class="meta">
+                                    <div class="entry-title">
+                                        <a href="../tintuc/tuyendung1.html">
+                                            <h3>CỘNG CÀ PHÊ TUYỂN DỤNG QUẢN LÝ CỬA HÀNG</h3>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="line1"></div>
+            </div>
+        </div>
+         
+    </div>
+    <div class="footer">
+        <div class="social-list">
+            <div class="social-list-inner">
+                <div class="left-social">
+                    <p>KÊNH KẾT NỐI</p>
+                    <div class="contact-icon">
+                        <a href="#" class="social-icon">
+                            <svg fill="#4c5b29" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"/></svg>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <svg fill="#4c5b29" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <svg fill="#4c5b29" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"/></svg>
+                        </a>
+                    </div>
+                    <img src="../../../assets/images/congthuong.png" alt="Cong thuong">
+                </div>
+                <div class="right-social">
+                    <p>LUÔN CẬP NHẬT</p>
+                    <p>Về các tin tức đó đây, sản phẩm mới</p>
+                    <form id="subForm"> 
+                        <div class="form-wrapper">
+                            <input id="email" placeholder="Email" type="email" class="input-box">
+                            <button id="emailSubmit" type="submit" class="subButton">Đăng ký</button>
+                        </div>
+                    </form>
+                    <p>Chúng tôi tôn trọng quyền riêng tư của bạn</p>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="copyright-inner">
+                <p>Công ty TNHH Cộng Cà Phê</p>
+                <p>Mã số DN: 0106696845 do Sở Kế hoạch và Đầu tư TP. Hà Nội cấp ngày 21/11/2014</p>
+                <div>
+                    <p>Địa chỉ: Số 101 Hoàng Cầu, phường Ô Chợ Dừa, quận Đống Đa, Hà Nội&nbsp;</p>
+                    <p>- Số điện thoại: +84 243 733 9966&nbsp; </p>
+                    <p>- Email: info@congcaphe.com</p>
+                </div>
+                <p>&#169;2017 - 2024 CÔNG TY TNHH Cộng Cà Phê Mọi quyền được bảo lưu</p>
+            </div>
+        </div>
+    </div>
+    <script src="../../../scripts/headfootscript.js"></script>
+</body>
+</html>
