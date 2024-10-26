@@ -56,6 +56,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -87,6 +88,8 @@ input, button {
     display: flex;
     justify-content: center;
     position: fixed;
+    top: 0;
+    left: 0;
     z-index: 100000;
 }
 
@@ -116,7 +119,7 @@ input, button {
     text-align: center;
 }
 
-.nav-cell p {
+.nav-cell a {
     font-size: 15px;
     letter-spacing: -1px;
     color: var(--milky-text-color);
@@ -126,7 +129,7 @@ input, button {
     transition: all 150ms linear 0s;
 }
 
-.nav-cell p:hover {
+.nav-cell a:hover, .nav-cell a.active {
     color: var(--primary-text-color);
 }
 
@@ -186,22 +189,28 @@ input, button {
 /* ---------------container------------------ */
 
 .container {
-    padding-top: 65px;
+    width: 100%;
+}
+
+.section {
+    min-height: 100vh;
 }
 
 #QC {
-    height: calc(100vh - 65px);
     background-image: url('../images/khtv/qcbackground.png');
     background-size: cover;
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 #QC .QC-inner {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 100px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 #QC img {
@@ -225,7 +234,7 @@ input, button {
 
 #QUYENLOI {
     width: 100%;
-    /* sign: uni7mau */
+    padding: 65px 0;
 }
 
 #QUYENLOI .QL-inner {
@@ -352,6 +361,7 @@ input, button {
 #CTKM {
     position: relative;
     height: 124vh;
+    padding: 65px 0;
     background-image: url("../../assets/images/khtv/ctkmbackground.png");
 }
 
@@ -370,7 +380,7 @@ input, button {
 }
 
 #CTKM .tt {
-    margin: 50px 0 20px;
+    margin-bottom: 20px;
 }
 
 #CTKM .tt p {
@@ -461,13 +471,14 @@ input, button {
 
 #CHINHSACH {
     width: 100%;
+    padding: 65px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 #CHINHSACH .CHINHSACH-background {
-    width: 80%;
+    width: 75%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -479,13 +490,13 @@ input, button {
 }
 
 #CHINHSACH img:nth-child(2) {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     width: 100%;
 }
 
 #CHINHSACH .CHINHSACH-inner {
     width: 90%;
-    margin-bottom: 20px;
+    line-height: 1.6;
 }
 
 #HUONGDANDK {
@@ -571,20 +582,20 @@ input, button {
     transform: translateX(30px);
 }
 
-.footer {
-    min-height: calc(100vh - 65px);
+#FAQs {
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.footer-inner {
+.FAQs-inner {
     width: 90%;
     display: flex;
     justify-content: center;
 }
 
-.footer .quest-list {
+#FAQs .quest-list {
     width: 57%;
     margin-right: 50px;
     display: flex;
@@ -592,7 +603,7 @@ input, button {
     align-items: center;
 }
 
-.footer .quest-list > h2 {
+#FAQs .quest-list > h2 {
     font-family: 'BeauLuloClean-OneBold';
     font-size: 30px;
     font-weight: bold;
@@ -601,32 +612,32 @@ input, button {
     text-align: center;
 }
 
-.footer .quest-cell {
+#FAQs .quest-cell {
     width: 100%;
     border-bottom: var(--theme-border-value);
 }
 
-.quest-cell .title {
+#FAQs .quest-cell .title {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.quest-cell .icon-box {
+#FAQs .quest-cell .icon-box {
     position: relative;
     display: flex;
 }
 
-.icon-box > svg:nth-child(2) {
+#FAQs .icon-box > svg:nth-child(2) {
     position: absolute;
     transform: rotate(90deg);
 }
 
-.title.active svg:nth-child(2) {
+#FAQs .title.active svg:nth-child(2) {
     display: none;
 }
 
-.quest-cell .paragraph {
+#FAQs .quest-cell .paragraph {
     display: grid;
     transition: 0.3s ease;
     grid-template-rows: 0fr;
@@ -635,35 +646,35 @@ input, button {
     }
 }
 
-.paragraph.active {
+#FAQs .paragraph.active {
     grid-template-rows: 1fr;
 }
 
-.quest-cell .title p, .quest-cell .paragraph p {
+#FAQs .quest-cell .title p, #FAQs .quest-cell .paragraph p {
     font-size: 16px;
     color: var(--theme-color);
     padding: 20px 0;
     margin-right: 20px;
 }
 
-.quest-cell .title {
+#FAQs .quest-cell .title {
     font-weight: bold;
 }
 
-.quest-cell .paragraph p {
+#FAQs .quest-cell .paragraph p {
     text-indent: 30px;
     padding-top: 0px;
 }
 
-.footer .quest-list svg {
+#FAQs .quest-list svg {
     width: 20px;
 }
 
-.footer .img-box {
+#FAQs .img-box {
     width: 500px;
 }
 
-.footer .img-box > img {
+#FAQs .img-box > img {
     width: 100%;
 }
 
@@ -734,19 +745,19 @@ input, button {
         width: 370px;
     }
 
-    .footer-inner {
+    .FAQs-inner {
         flex-direction: column;
         align-items: center;
         padding: 30px 0;
     }
 
-    .quest-list {
+    #FAQs .quest-list {
         width: 100% !important;
         margin-right: 0 !important;
         margin-bottom: 50px;
     }
 
-    .footer .img-box {
+    #FAQs .img-box {
         width: auto !important;
     }
 }
@@ -782,6 +793,6 @@ input, button {
     }
 
     #CHINHSACH .CHINHSACH-background {
-        width: 100%;
+        width: 98%;
     }
 }
