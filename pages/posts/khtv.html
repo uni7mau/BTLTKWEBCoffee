@@ -35,6 +35,28 @@
         </div>
     </div>
     <div class="container">
+        <div class="m-drop-icon" id="mMenuBtn" onclick="toggleMobileBtn()">
+            <svg fill="rgb(249, 245, 229)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M246.6 470.6c-12.5 12.5-32.8 12.5-45.3 0l-160-160c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L224 402.7 361.4 265.4c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3l-160 160zm160-352l-160 160c-12.5 12.5-32.8 12.5-45.3 0l-160-160c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L224 210.7 361.4 73.4c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3z"/></svg>
+        </div>
+        <div class="m-nav-list">
+            <div>
+                <div class="nav-cell" onclick="toggleMobileBtn()">
+                    <a class="" href="#QUYENLOI">Quyền Lợi Thành Viên</a>
+                </div>
+                <div class="nav-cell" onclick="toggleMobileBtn()">
+                    <a class="" href="#CTKM">Chương Trình Khuyến Mãi</a>
+                </div>
+                <div class="nav-cell" onclick="toggleMobileBtn()">
+                    <a class="" href="#CHINHSACH">Chính Sách Ưu Đãi</a>
+                </div>
+                <div class="nav-cell" onclick="toggleMobileBtn()">
+                    <a class="" href="#HUONGDANDK">Hướng Dẫn Đăng Ký</a>
+                </div>
+                <div class="nav-cell" onclick="toggleMobileBtn()">
+                    <a class="" href="#FAQs">Câu Hỏi Thường Gặp</a>
+                </div>
+            </div>
+        </div>
         <div class="section" id="QC">
             <div class="QC-inner">
                 <img src="../../assets/images/khtv/qcelement.png" alt="Element">
@@ -121,27 +143,29 @@
                     </a>
                 </div>
                 <div class="carousel">
+                    <div class="carousel-arr-left" id="prev-btn">
+                        <svg fill="rgb(249, 245, 229)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
+                    </div>
                     <div class="carousel-inner">
-                        <div class="carousel-arr-left" id="prev-btn" onclick="prevImg()">
-                            <svg fill="rgb(249, 245, 229)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
-                        </div>
                         <div class="carousel-pics">
-                            <div id="crs-item-1" class="carousel-item">
-                                <img src="../../assets/images/khtv/ctkm1.jpg" alt="CSKM1">
+                            <div class="carousel-item">
+                                <img src="../../assets/images/khtv/ctkm1.jpg" alt="CTKM1">
                             </div>
-                            <div id="crs-item-2" class="carousel-item">
-                                <img src="../../assets/images/khtv/ctkm2.jpg" alt="CSKM2">
+                            <div class="carousel-item">
+                                <img src="../../assets/images/khtv/ctkm2.jpg" alt="CTKM2">
                             </div>
-                            <div id="crs-item-3" class="carousel-item">
-                                <img src="../../assets/images/khtv/ctkm3.jpg" alt="CSKM3">
+                            <div class="carousel-item">
+                                <img src="../../assets/images/khtv/ctkm3.jpg" alt="CTKM3">
                             </div>
-                        </div>
-                        <div class="carousel-arr-right" id="next-btn" onclick="nextImg()">
-                            <svg fill="rgb(249, 245, 229)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg>
                         </div>
                     </div>
-                    <div class="indicator-circle">
-                        <div class="item"></div>
+                    <div class="carousel-arr-right" id="next-btn">
+                        <svg fill="rgb(249, 245, 229)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg>
+                    </div>
+                </div>
+                <div class="indicator-circle">
+                    <div class="indicator-inner">
+                        <div class="item active"></div>
                         <div class="item"></div>
                         <div class="item"></div>
                     </div>
@@ -192,7 +216,7 @@
                 <div class="quest-list">
                     <h2>Câu hỏi thường gặp</h2>
                     <div class="quest-cell">
-                        <div class="title" id="exp-btn" onclick="toogleSubMenu(this)">
+                        <div class="title" id="exp-btn" onclick="toggleSubMenu(this)">
                             <p>1. Đặt đơn hàng qua app giao hàng có được tích điểm không</p>
                             <div class="icon-box">
                                 <svg fill="#4c5b29" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"/></svg>
@@ -206,7 +230,7 @@
                         </div>
                     </div>
                     <div class="quest-cell">
-                        <div class="title" id="exp-btn" onclick="toogleSubMenu(this)">
+                        <div class="title" id="exp-btn" onclick="toggleSubMenu(this)">
                             <p>2. Làm sao để kiểm tra những ưu đãi mình đang có</p>
                             <div class="icon-box">
                                 <svg fill="#4c5b29" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"/></svg>
@@ -220,7 +244,7 @@
                         </div>
                     </div>
                     <div class="quest-cell">
-                        <div class="title" id="exp-btn" onclick="toogleSubMenu(this)">
+                        <div class="title" id="exp-btn" onclick="toggleSubMenu(this)">
                             <p>3. Làm sao để kiểm tra hạng thành viên và điểm của mình?</p>
                             <div class="icon-box">
                                 <svg fill="#4c5b29" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"/></svg>
@@ -234,7 +258,7 @@
                         </div>
                     </div>
                     <div class="quest-cell">
-                        <div class="title" id="exp-btn" onclick="toogleSubMenu(this)">
+                        <div class="title" id="exp-btn" onclick="toggleSubMenu(this)">
                             <p>4. Mình có mã giảm giá, làm sao để sử dụng?</p>
                             <div class="icon-box">
                                 <svg fill="#4c5b29" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"/></svg>
@@ -248,7 +272,7 @@
                         </div>
                     </div>
                     <div class="quest-cell">
-                        <div class="title" id="exp-btn" onclick="toogleSubMenu(this)">
+                        <div class="title" id="exp-btn" onclick="toggleSubMenu(this)">
                             <p>5. Làm sao để tích điểm khi mua hàng?</p>
                             <div class="icon-box">
                                 <svg fill="#4c5b29" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"/></svg>
@@ -266,6 +290,9 @@
                     <img src="../../assets/images/khtv/quest-foot-pic.jpg" alt="Anh khach hang">
                 </div>
             </div>
+        </div>
+        <div class="footer">
+            <p>Cộng cà phê <span>&#169;</span> 2007</p>
         </div>
     </div>
     <script src="../../scripts/khtvscript.js"></script>

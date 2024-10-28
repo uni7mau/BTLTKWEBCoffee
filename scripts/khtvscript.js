@@ -1,32 +1,13 @@
-function toogleSubMenu(button) {
-    button.nextElementSibling.classList.toggle('active')
-    button.classList.toggle('active')
+function toggleMobileBtn() {
+    let mBtn = document.querySelector("#mMenuBtn")
+    mBtn.classList.toggle("active")
+    let target = document.querySelector(".m-nav-list")
+    target.classList.toggle("active")
 }
-let images = [...document.querySelectorAll(".carousel-item")]
-let idcts = [...document.querySelectorAll(".item")]
-let currImg = 0;
-images[0].style.display = "block"
-idcts[0].classList.add("active")
 
-function show(pos) {
-    for (var i = 0; i < images.length; i++) {
-        if (i != pos) {
-            images[i].style.display = "none"
-            idcts[i].classList.remove("active")
-        }
-    }
-    images[pos].style.display = "block"
-    idcts[pos].classList.add("active")
-}
-function prevImg() {
-    currImg -= 1;
-    if (currImg < 0) currImg = images.length - 1
-    show(currImg)
-}
-function nextImg() {
-    currImg += 1;
-    if (currImg >= images.length) currImg = 0
-    show(currImg)
+function toggleSubMenu(button) {
+    button.nextElementSibling.classList.toggle("active")
+    button.classList.toggle("active")
 }
 
 let sections = document.querySelectorAll(".section")
@@ -47,3 +28,47 @@ window.onscroll = () => {
         }
     })
 }
+
+let crs = document.querySelector(".carousel .carousel-pics");
+let crsItems = document.querySelectorAll(".carousel .carousel-pics .carousel-item")
+let dots = document.querySelectorAll(".indicator-circle .item")
+
+let prev = document.getElementById("prev-btn")
+let next = document.getElementById("next-btn")
+
+let active = 0
+
+next.onclick = function() {
+    if (active+1 == crsItems.length) active = 0
+    else active += 1
+
+    reloadSlider()
+}
+
+prev.onclick = function() {
+    if (active-1 < 0) active = crsItems.length-1
+    else active -= 1
+
+    reloadSlider()
+}
+
+let refreshSlider = setInterval(() => { next.click() }, 5000)
+
+function reloadSlider() {
+    let checkLeft = crsItems[active].offsetLeft
+    crs.style.left = -checkLeft + "px"
+
+    let lastActiveDot = document.querySelector(".indicator-circle .item.active")
+    lastActiveDot.classList.remove("active")
+    dots[active].classList.add("active")
+
+    clearInterval(refreshSlider)
+    refreshSlider = setInterval(() => { next.click() }, 5000)
+}
+
+dots.forEach((li, key) => {
+    li.addEventListener("click", function() {
+        active = key
+        reloadSlider()
+    })
+})
