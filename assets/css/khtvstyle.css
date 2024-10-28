@@ -235,6 +235,7 @@ img {
 }
 
 .container .m-nav-list {
+    width: 100%;
     display: grid;
     position: absolute;
     left: 50%;
