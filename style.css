@@ -200,7 +200,9 @@ section.content{
 }
 
 .card .card-title{
-    font-size: 20px;
+    font-family: 'BeauLuloClean-OneBold';
+
+    font-size: 22px;
     font-weight: bold;
     margin: 0;
 }
@@ -222,6 +224,7 @@ section.content{
 }
 
 .card-body h6{
+    margin-top: 5px;
     content:"";
     background: #555555;
     height: 4px;
@@ -290,4 +293,7 @@ section.content{
 .footer-se .category-drinks h4,
 .footer-se .category-policy h4 {
     text-transform: uppercase; /* Capitalize titles */
+}
+p{
+    margin-bottom: 0;
 }

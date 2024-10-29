@@ -1,0 +1,143 @@
+@media only screen and(min-width: 992px) {
+    .col-lg-8 {
+        -ms-flex: 0 0 66.666667%;
+        flex: 0 0 66.666667%;
+        max-width: 66.666667%;
+    }
+}
+@media only screen and(min-width: 576px) {
+    .col-sm-5 {
+        -ms-flex: 0 0 41.666667%;
+        flex: 0 0 41.666667%;
+        max-width: 41.666667%;
+    }
+}
+
+@media only screen and(min-width: 576px) {
+    .col-sm-7 {
+        -ms-flex: 0 0 58.333333%;
+        flex: 0 0 58.333333%;
+        max-width: 58.333333%;
+    }
+}
+
+@media only screen and(min-width: 576px) {
+    .col-sm-4 {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+}
+
+@media only screen and(min-width: 992px) {
+    .news {
+        max-width: 960px;
+    }
+}
+
+
+a{
+    color: #555555 !important;
+}
+.news .entry-title {
+    margin-top: 0;
+    border: none;
+    margin-bottom: 0px;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: none;
+    font-family: 'BeauLuloClean-OneBold';
+}
+.container-tra {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.postContent img{
+    width: 600px;
+    height: 600px;
+}
+
+.container-tra .tags{
+    margin: 20px 0;
+}
+
+.related-posts{
+    margin-bottom: 15px;
+}
+
+
+.related-posts h2.title-related{
+    font-family: 'BeauLuloClean-OneBold';
+
+    color: #555;
+    margin: 0 0 20px;
+    font-size: 17px;
+    height: auto;
+    text-transform: uppercase;
+    border-bottom: solid 1px #eee;
+    padding-bottom: 10px;
+}
+
+.teaser{
+    border: var(--dark-border-value);
+    overflow: hidden;
+    background-color: var(--vt-palette-lightold);
+}
+
+.teaser img{
+    width: 100%;
+}
+
+.meta .entry-title{
+    margin-top: 0;
+    border: none;
+    margin-bottom: 0px;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: none;
+    font-family: 'BeauLuloClean-OneBold';
+}
+
+.related-posts .post-box{
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: solid 1px #eee;
+}
+
+.widget .post-box {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.widget .post-box .entry-title {
+    font-family: 'NittiTypewriter';
+    font-family: inherit;
+    margin-bottom: 0;
+    padding: 0;
+    margin-left: -15px;
+}
+
+.post-box-excerpt p{
+    font-family: 'NittiTypewriter';
+    font-size: 13px;
+}
+
+.entry-title h2{
+    font-size: 15px; !important
+
+}
+
+
+
