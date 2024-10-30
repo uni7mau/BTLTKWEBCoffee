@@ -38,15 +38,8 @@
 }
 
 @media only screen and (max-width: 992px) {
-    .carousel-inner h5{
-        
-    }
     .m-header{
         z-index: 100;
-    }
-    
-    .content .story{
-        padding: 40px 0;
     }
 
     .content .bcolor{
@@ -54,14 +47,20 @@
     }
 
     .content .card-body{
-        height: auto;
+        height: max-content;
         opacity: 0.8;
+
     }
 
     .Home-main .story .card .card-body{
         background-color: #FFF2D5;
         opacity: 0.9;
     
+    }
+
+    .Home-main section.content{
+        width: 100%;
+        margin: 0;
     }
 
     .content .leftTxt .card-body{
@@ -78,33 +77,33 @@
         opacity: 90%;
         padding: 10px;
         line-height: 1.7;
-        height: auto;
+        height: max-content;
     }
     .content .reCard .card-body{
-        height: auto;
+        height: max-content;
         width: auto;
     }
-    .content .card-title{
-        font-size: 18px;
+    .content h5.card-title{
+        font-size: small;
     }
     .card-text {
       display: none;
     }
 
+    .container-se img.card-img-top{
+        padding-bottom: 20px;
+    }
+
     div.footer-se{
         display: none;
     }
-    .card-body .card-title{
-        font-size: smaller;
+
+    .container-se .card{
+        border: none;
     }
+   
 
 }
-
-@media only screen and(max-with: 768px){
-    
-}
-
-
 
 /* code here */
 
@@ -294,6 +293,7 @@ section.content{
 .footer-se .category-policy h4 {
     text-transform: uppercase; /* Capitalize titles */
 }
+
 p{
     margin-bottom: 0;
 }
