@@ -72,6 +72,10 @@ input, button {
     font-family: inherit;
 }
 
+img, svg {
+    vertical-align: middle;
+}
+
 /* ---------------------Header----------------------- */
 
 .m-header {
