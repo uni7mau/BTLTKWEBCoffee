@@ -1,44 +1,46 @@
-@media (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
     .container {
         max-width: 990px;
     }
 }
-@media only screen and(min-width: 992px) {
+@media only screen and (min-width: 992px) {
     .col-lg-8 {
         -ms-flex: 0 0 66.666667%;
         flex: 0 0 66.666667%;
         max-width: 66.666667%;
     }
+    .news {
+        max-width: 960px;
+    }
+
+
 }
-@media only screen and(min-width: 576px) {
+@media only screen and (min-width: 576px) {
     .col-sm-5 {
         -ms-flex: 0 0 41.666667%;
         flex: 0 0 41.666667%;
         max-width: 41.666667%;
     }
-}
 
-@media only screen and(min-width: 576px) {
+    .col-sm-4 {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+
     .col-sm-7 {
         -ms-flex: 0 0 58.333333%;
         flex: 0 0 58.333333%;
         max-width: 58.333333%;
     }
 }
-
-@media only screen and(min-width: 576px) {
+@media only screen and (max-width: 991px) {
     .col-sm-4 {
-        -ms-flex: 0 0 33.333333%;
-        flex: 0 0 33.333333%;
-        max-width: 33.333333%;
+        display: none;
     }
+
 }
 
-@media only screen and(min-width: 992px) {
-    .news {
-        max-width: 960px;
-    }
-}
 
 
 a{
@@ -76,7 +78,6 @@ a{
 
 .related-posts h2.title-related{
     font-family: 'BeauLuloClean-OneBold';
-
     color: #555;
     margin: 0 0 20px;
     font-size: 17px;
@@ -140,9 +141,19 @@ a{
 }
 
 .entry-title h2{
-    font-size: 15px; !important
+    font-size: 15px !important;
+    line-height: 1.2;
 
 }
 
+.regular.social-shares{
+    display: flex;
+    float: right;
+}
 
+
+.content-wrapper {
+    margin-top: 30px;
+    font-weight: normal;
+}
 
