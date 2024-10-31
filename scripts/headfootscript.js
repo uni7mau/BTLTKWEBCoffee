@@ -23,7 +23,7 @@ const input = document.querySelector("#email"),
 
     submitBtn.disabled = true
 
-input.addEventListener("keyup", ()=>{
+input.addEventListener("keyup", () => {
     let pattern = /^[^ ]+@[^ ]+\.[a-z]{3}$/
     submitBtn.disabled = !submitBtn.disabled
     if (input.value === "") {
@@ -32,7 +32,6 @@ input.addEventListener("keyup", ()=>{
     }
     if (input.value.match(pattern)) {
         submitBtn.classList.add("active")
-        
         return ;
     }
     submitBtn.classList.remove("active")
