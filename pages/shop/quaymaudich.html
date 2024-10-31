@@ -6,6 +6,7 @@
     <title>Quầy Mậu Dịch</title>
     <link rel="stylesheet" href="../../assets/css/qmdfootheadstyle.css">
     <link rel="stylesheet" href="../../assets/css/special-font-style.css">
+    <link rel="stylesheet" href="../../assets/css/quaymaudichstyle.css">
 </head>
 <body>
     <div class="modal-contact-wrapper">
@@ -31,7 +32,11 @@
     </div>
     <div class="header" id="site-header">
         <div class="header-inner">
-            <div class="m-dropdown-icon"></div>
+            <div id="m-popup-btn" class="m-popup-icon" onclick="popupMenu(this)">
+                <div class="bar1 bar"></div>
+                <div class="bar2 bar"></div>
+                <div class="bar3 bar"></div>
+            </div>
             <div class="header-left">
                 <a href="../../index.html">
                     <img src="../../assets/images/logo.png" alt="Logo">
@@ -101,15 +106,21 @@
                         <div class="search-drop-button" id="search-drop-btn">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
                         </div>
-                        <div class="search-dropdown">
-                            <span class="triangle"></span>
+                        <div class="search-dropdown" id="search-drop-box">
+                            <span class="triangle">
+                                <svg viewBox="0 0 20 9" role="presentation">
+                                    <path d="M.47108938 9c.2694725-.26871321.57077721-.56867841.90388257-.89986354C3.12384116 6.36134886 5.74788116 3.76338565 9.2467995.30653888c.4145057-.4095171 1.0844277-.40860098 1.4977971.00205122L19.4935156 9H.47108938z" fill="#ffffff"></path>
+                                </svg>
+                            </span>
                             <div class="dropdown-dialog-inner">
                                 <div class="title">
                                     <p>Tìm kiếm</p>
                                 </div>    
                                 <div class="site-search">
-                                    <input type="text">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+                                    <input type="text" placeholder="Tìm kiếm sản phẩm..." id="autoCompleteSearch">
+                                    <button type="submit" id="search-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -118,35 +129,56 @@
                         <div class="account-drop-button" id="account-drop-btn">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M399 384.2C376.9 345.8 335.4 320 288 320l-64 0c-47.4 0-88.9 25.8-111 64.2c35.2 39.2 86.2 63.8 143 63.8s107.8-24.7 143-63.8zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm256 16a72 72 0 1 0 0-144 72 72 0 1 0 0 144z"/></svg>
                         </div>
-                        <div class="account-dropdown">
-                            <span class="triangle"></span>
+                        <div class="account-dropdown" id="account-drop-box">
+                            <span class="triangle">
+                                <svg viewBox="0 0 20 9" role="presentation">
+                                    <path d="M.47108938 9c.2694725-.26871321.57077721-.56867841.90388257-.89986354C3.12384116 6.36134886 5.74788116 3.76338565 9.2467995.30653888c.4145057-.4095171 1.0844277-.40860098 1.4977971.00205122L19.4935156 9H.47108938z" fill="#ffffff"></path>
+                                </svg>
+                            </span>
                             <div class="dropdown-dialog-inner">
                                 <div class="site-account" id="siteNavAcc">
                                     <div class="account-panel-list">
                                         <div class="login-panel">
                                             <div class="title">
-                                                <p>Đăng nhập tài khoản</p>
+                                                <h2>Đăng nhập tài khoản</h2>
                                                 <p>Nhập email và mật khẩu của bạn:</p>
                                             </div>
                                             <div class="login-form">
-                                                <input type="text" placeholder="Email" id="logEmail">
-                                                <input type="text" placeholder="Mật khẩu" id="logPassword">
-                                                <p>This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>
-                                                <button type="submit">Đăng nhập</button>
-                                                <p>Khách hàng mới? <a href="#">Tạo tài khoản</a></p>
-                                                <p>Quên mật khẩu? <a href="#">Khôi phục mật khẩu</a></p>
+                                                <div class="input-box">
+                                                    <div>
+                                                        <input type="text" id="accEmail">
+                                                        <label for="login-customer[email]" class="floating-label">Email</label>
+                                                    </div>
+                                                    <div>
+                                                        <input type="text" id="accPassword">
+                                                        <label for="login-customer[password]" class="floating-label">Mật khẩu</label>
+                                                    </div>
+                                                    <p>This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy">Privacy Policy</a> and <a href="https://policies.google.com/terms">Terms of Service</a> apply.</p>
+                                                    <button class="submit-button" type="submit" id="login-btn">Đăng nhập</button>
+                                                </div>
+                                                <div class="secondary-box">
+                                                    <p>Khách hàng mới? <a href="#">Tạo tài khoản</a></p>
+                                                    <p>Quên mật khẩu? <button id="log-recovery-apr-btn">Khôi phục mật khẩu</button></p>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="recovery-panel">
                                             <div class="title">
-                                                <p>Khôi phục mật khẩu</p>
+                                                <h2>Khôi phục mật khẩu</h2>
                                                 <p>Nhập email của bạn:</p>
                                             </div>
                                             <div class="recovery-form">
-                                                <input type="text" placeholder="Email" id="reEmail">
-                                                <p>This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>
-                                                <button type="submit">Khôi phục</button>
-                                                <p>Bạn đã nhớ mật khẩu? <a href="#">Trở về đăng nhập</a></p>
+                                                <div class="input-box">
+                                                    <div>
+                                                        <input type="text" id="accEmail">
+                                                        <label for="login-customer[email]" class="floating-label">Email</label>
+                                                    </div>
+                                                    <p>This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy">Privacy Policy</a> and <a href="https://policies.google.com/terms">Terms of Service</a> apply.</p>
+                                                    <button class="submit-button" type="submit" id="recov-btn">Khôi phục</button>
+                                                </div>
+                                                <div class="secondary-box">
+                                                    <p>Bạn đã nhớ mật khẩu? <button id="log-back-btn">Trở về đăng nhập</button></p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -155,7 +187,7 @@
                         </div>
                     </div>
                     <div class="item">
-                        <div class="cart-drop-button" id="cart-drop-button">
+                        <div class="cart-drop-button" id="cart-drop-btn">
                             <svg version="1.1" class="svg-ico-cart" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 27" style="enable-background:new 0 0 24 27;" xml:space="preserve">
                                 <g><path d="M0,6v21h24V6H0z M22,25H2V8h20V25z"></path></g>
                                 <g><path d="M12,2c3,0,3,2.3,3,4h2c0-2.8-1-6-5-6S7,3.2,7,6h2C9,4.3,9,2,12,2z"></path></g>
@@ -166,14 +198,86 @@
                                 </svg>
                             </span>
                             <span class="count-holder">
-                                <span class="count">0</span>
+                                <span class="count" id="targetCount">0</span>
                             </span>
-                            
                         </div>
-                        <div class="cart-dropdown">
-                            <span class="triangle"></span>
+                        <div class="cart-dropdown" id="cart-drop-box">
+                            <span class="triangle">
+                                <svg viewBox="0 0 20 9" role="presentation">
+                                    <path d="M.47108938 9c.2694725-.26871321.57077721-.56867841.90388257-.89986354C3.12384116 6.36134886 5.74788116 3.76338565 9.2467995.30653888c.4145057-.4095171 1.0844277-.40860098 1.4977971.00205122L19.4935156 9H.47108938z" fill="#ffffff"></path>
+                                </svg>
+                            </span>
                             <div class="dropdown-dialog-inner">
-                                
+                                <div class="site-cart" id="siteNavCart">
+                                    <div class="cart-title">
+                                        <p>Giỏ hàng</p>
+                                    </div>
+                                    <div class="cart-view">
+                                        <div class="cart-view-scroll">
+                                            <table class="table-clone-cart" id="clone-item-cart">
+                                                <tbody>
+                                                    <tr class="item-2 hidden">
+                                                        <td class="img">
+                                                            <a href="" title>
+                                                                <img src="" alt="">
+                                                            </a>
+                                                        </td>
+                                                        <td>
+                                                            <p class="pro-title">
+                                                                <a href="" class="pro-title-view"></a>
+                                                                <span class="variant"></span>
+                                                            </p>
+                                                            <div class="mini-cart-quantity">
+                                                                <div class="pro-quantity-view">
+                                                                    <span class="qty-value"></span>
+                                                                </div>
+                                                                <div class="pro-price-view"></div>
+                                                            </div>
+                                                            <div class="remove-cart"></div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <table id="cart-view-inner">
+                                                <tbody>
+                                                    <tr class="item-cart-empty">
+                                                        <td>
+                                                            <div class="svgico-mini-cart">
+                                                                <svg width="81" height="70" viewBox="0 0 81 70">
+                                                                    <g transform="translate(0 2)" stroke-width="4" stroke="#1e2d7d" fill="none" fill-rule="evenodd">
+                                                                        <circle stroke-linecap="square" cx="34" cy="60" r="6"></circle>
+                                                                        <circle stroke-linecap="square" cx="67" cy="60" r="6"></circle>
+                                                                        <path d="M22.9360352 15h54.8070373l-4.3391876 30H30.3387146L19.6676025 0H.99560547"></path>
+                                                                    </g>
+                                                                </svg>
+                                                            </div>
+                                                            Hiện chưa có sản phẩm
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="horizontal-splitline"></div>
+                                        <div class="cart-view-total">
+                                            <table class="table-total">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="text-left">TỔNG TIỀN</td>
+                                                        <td class="text-right" id="total-view-cart">0đ</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <a href="" class="linktocart">Xem giỏ hàng</a>
+                                                        </td>
+                                                        <td>    
+                                                            <a href="" class="linktocheckout">Thanh toán</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -181,17 +285,6 @@
             </div>
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
     <div class="container">
 
     </div>
@@ -297,6 +390,7 @@
         </div>
     </div>
 
-    <script src="../../scripts/quaymaudichscript.js"></script>
+    <script src="../../scripts/quaymaudich/qmdheadfootscript.js"></script>
+    <script src="../../scripts/quaymaudich/quaymaudich.js"></script>
 </body>
 </html>
