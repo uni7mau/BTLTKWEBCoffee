@@ -329,7 +329,7 @@ input, button {
 }
 
 .m-left-header {
-    margin-right: 20%;
+    margin-right: 10%;
     display: none;
     position: relative;
 }
@@ -522,22 +522,12 @@ input, button {
 
 @media (min-width: 992px) {
     .header-left {
-        min-width: 180px;
+        min-width: 150px;
     }
 }
 
 .header-left img {
     width: 70px;
-}
-
-.header-middle {
-    padding: 0 15px;
-}
-
-@media (min-width: 992px) {
-    .header-middle {
-        padding: 0;
-    }
 }
 
 .header-middle .nav-wrapper, .header-middle .nav-cell {
@@ -553,7 +543,7 @@ input, button {
     position: relative;
     font-size: 15px;
     font-weight: 400;
-    padding: 10px 0 15px;
+    padding: 25px 0px;
     margin: 0 12px;
     color: var(--dark-text-color-v1);
     transition: opacity 150ms linear, color 150ms linear, background 150ms linear;
@@ -563,12 +553,6 @@ input, button {
     .nav-cell a {
         font-size: 14px;
         margin: 0 10px;
-    }
-}
-
-@media (min-width: 992px) {
-    .nav-cell > a {
-        padding: 25px 0px;
     }
 }
 
@@ -644,15 +628,7 @@ input, button {
     text-decoration: underline;
 }
 
-.header-right {
-    padding: 0 15px;
-}
-
 @media (max-width: 420px) {
-    .header-right {
-        padding: 0;
-    }
-
     .tools-wrapper .item:nth-child(2) {
         margin-left: 0;
     }
@@ -1339,7 +1315,7 @@ table tr td:last-child {
     position: absolute;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 991px) {
     .header {
         padding-top: 20px;
     }
@@ -1358,10 +1334,6 @@ table tr td:last-child {
 
     .m-popup-icon {
         display: block;
-    }
-
-    .header-right {
-        padding-right: 0;
     }
 }
 
@@ -1503,7 +1475,7 @@ table tr td:last-child {
     align-items: center;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
     .top-footer .left .newsletter-area {
         flex-direction: column;
     }
@@ -1515,7 +1487,7 @@ table tr td:last-child {
     justify-content: center;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
     .top-footer .newsletter-area .title {
         margin-bottom: 10px;
     }
