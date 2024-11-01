@@ -23,8 +23,8 @@
                         <li>Các chương trình ưu đãi đặc biệt</li>
                         <li>Nhận thông tin sớm về sản phẩm</li>
                     </ul>
-                    <input type="email" placeholder="Nhập email của bạn">
-                    <button class="send-email-button" type="submit">ĐĂNG KÍ</button>
+                    <input type="email" placeholder="Nhập email của bạn" id="modal-email">
+                    <button class="send-email-button" type="submit" id="modal-email-submit-btn">ĐĂNG KÍ</button>
                     <div class="success-popup"></div>
                 </div>
             </div>
@@ -32,10 +32,137 @@
     </div>
     <div class="header" id="site-header">
         <div class="header-inner">
-            <div id="m-popup-btn" class="m-popup-icon" onclick="popupMenu(this)">
-                <div class="bar1 bar"></div>
-                <div class="bar2 bar"></div>
-                <div class="bar3 bar"></div>
+            <div class="m-left-header">
+                <div id="m-popup-btn" class="m-popup-icon" onclick="popupMenu(this)">
+                    <div class="bar1 bar"></div>
+                    <div class="bar2 bar"></div>
+                    <div class="bar3 bar"></div>
+                </div>
+                <div class="m-left-dropdown" id="m-left-drop-box">
+                    <span class="triangle">
+                        <svg viewBox="0 0 20 9" role="presentation">
+                            <path d="M.47108938 9c.2694725-.26871321.57077721-.56867841.90388257-.89986354C3.12384116 6.36134886 5.74788116 3.76338565 9.2467995.30653888c.4145057-.4095171 1.0844277-.40860098 1.4977971.00205122L19.4935156 9H.47108938z" fill="#ffffff"></path>
+                        </svg>
+                    </span>
+                    <div class="dropdown-dialog-inner">
+                        <div class="slider">
+                            <div class="main-slide" id="main-slide">
+                                <ul class="m-left-nav-list">
+                                    <li class="m-left-nav-cell" id="bst-slide-btn">
+                                        <a href="#">BỘ SƯU TẬP
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg>
+                                        </a>
+                                    </li>
+                                    <li class="m-left-nav-cell" id="coffee-slide-btn">
+                                        <a href="#">CÀ PHÊ
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg>
+                                        </a>
+                                    </li>
+                                    <li class="m-left-nav-cell">
+                                        <a href="tracothu/tracothu.html">TRÀ CỔ THỤ</a>
+                                    </li>
+                                    <li class="m-left-nav-cell" id="dv-slide-btn">
+                                        <a href="#">ĐỒ VẢI
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg>
+                                        </a>
+                                    </li>
+                                    <li class="m-left-nav-cell">
+                                        <a href="dogiay/dogiay.html">ĐỒ GIẤY</a>
+                                    </li>
+                                    <li class="m-left-nav-cell">
+                                        <a href="doda/doda.html">ĐỒ DA</a>
+                                    </li>
+                                    <li class="m-left-nav-cell">
+                                        <a href="dosu/dosu.html">ĐỒ SỨ</a>
+                                    </li>
+                                    <li class="m-left-nav-cell">
+                                        <a href="lienhe/lienhe.html">LIÊN HỆ</a>
+                                    </li>
+                                </ul>
+                                <div class="support-expand">
+                                    <p>Bạn cần hỗ trợ?</p>
+                                    <div class="phone-help">
+                                        <svg class="icon icon--bi-phone" viewBox="0 0 24 24" role="presentation">
+                                            <g stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                                                <path d="M17 15l-3 3-8-8 3-3-5-5-3 3c0 9.941 8.059 18 18 18l3-3-5-5z" stroke="#1e2d7d"></path>
+                                                <path d="M14 1c4.971 0 9 4.029 9 9m-9-5c2.761 0 5 2.239 5 5" stroke="#00badb"></path>
+                                            </g>
+                                        </svg>
+                                        <p>Liên hệ: 0243.773.9966</p>
+                                    </div>
+                                    <div class="email-help">
+                                        <svg class="icon icon--bi-email" viewBox="0 0 22 22" role="presentation">
+                                            <g fill="none" fill-rule="evenodd">
+                                                <path stroke="#00badb" d="M.916667 10.08333367l3.66666667-2.65833334v4.65849997zm20.1666667 0L17.416667 7.42500033v4.65849997z"></path>
+                                                <path stroke="#1e2d7d" stroke-width="2" d="M4.58333367 7.42500033L.916667 10.08333367V21.0833337h20.1666667V10.08333367L17.416667 7.42500033"></path>
+                                                <path stroke="#1e2d7d" stroke-width="2" d="M4.58333367 12.1000003V.916667H17.416667v11.1833333m-16.5-2.01666663L21.0833337 21.0833337m0-11.00000003L11.0000003 15.5833337"></path>
+                                                <path d="M8.25000033 5.50000033h5.49999997M8.25000033 9.166667h5.49999997" stroke="#00badb" stroke-width="2" stroke-linecap="square"></path>
+                                            </g>
+                                        </svg>
+                                        <p>info@congcaphe.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sub-slide-bst active" id="sub-slide-bst">
+                                <ul class="m-left-nav-list">
+                                    <li class="m-left-nav-cell" id="bst-back-btn">
+                                        <p>Quay về</p>
+                                    </li>
+                                    <li class="m-left-nav-cell">
+                                        <a href="#">Xem tất cả "Bộ sưu tập"</a>
+                                    </li>
+                                    <li class="m-nav">
+                                        <a href="bosuutap/bgncm.html">- Bình giữ nhiệt - Ca men</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="sub-slide-coffee active" id="sub-slide-coffee">
+                                <ul class="m-left-nav-list">
+                                    <li class="m-left-nav-cell" id="coffee-back-btn">
+                                        <p>Quay về</p>
+                                    </li>
+                                    <li class="m-left-nav-cell">
+                                        <a href="coffee/coffee.html">Xem tất cả "Cà phê"</a>
+                                    </li>
+                                    <li class="m-nav">
+                                        <a href="coffee/xhcn.html">- Cà Phê Xã Hội Chủ Nghĩa Việt Nam</a>
+                                    </li>
+                                    <li class="m-nav">
+                                        <a href="coffee/cfbot.html">- Cà Phê Bột</a>
+                                    </li>
+                                    <li class="m-nav">
+                                        <a href="coffee/cfhoatan.html">- Cà Phê Hòa Tan</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="sub-slide-dv active" id="sub-slide-dv">
+                                <ul class="m-left-nav-list">
+                                    <li class="m-left-nav-cell" id="dv-back-btn">
+                                        <p>Quay về</p>
+                                    </li>
+                                    <li class="m-left-nav-cell">
+                                        <a href="dovai/dovai.html">Xem tất cả "Đồ Vải"</a>
+                                    </li>
+                                    <li class="m-nav">
+                                        <a href="dovai/tui.html">- Túi Vải</a>
+                                    </li>
+                                    <li class="m-nav">
+                                        <a href="dovai/ao.html">- Áo</a>
+                                    </li>
+                                    <li class="m-nav">
+                                        <a href="dovai/quan.html">- Quần</a>
+                                    </li>
+                                    <li class="m-nav">
+                                        <a href="dovai/giaydep.html">- Giày Dép</a>
+                                    </li>
+                                    <li class="m-nav">
+                                        <a href="dovai/sanphamkhac.html">- Sản Phẩm Khác</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="header-left">
                 <a href="../../index.html">
@@ -51,52 +178,52 @@
                         </a>
                         <ul class="dropdown-menu">
                             <div>
-                                <li><a href="#">Bình giữ nhiệt - Ca men</a></li>
+                                <li><a href="bosuutap/bgncm.html">Bình giữ nhiệt - Ca men</a></li>
                             </div>
                         </ul>
                     </li>
                     <li class="nav-cell">
-                        <a href="#">
+                        <a href="coffee/coffee.html">
                             Cà Phê
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
                         </a>
                         <ul class="dropdown-menu">
                             <div>
-                                <li><a href="#">Cà Phê Xã Hội Chủ Nghĩa Việt Nam</a></li>
-                                <li><a href="#">Cà Phê Bột</a></li>
-                                <li><a href="#">Cà Phê Hòa Tan</a></li>
+                                <li><a href="coffee/xhcn.html">Cà Phê Xã Hội Chủ Nghĩa Việt Nam</a></li>
+                                <li><a href="coffee/cfbot.html">Cà Phê Bột</a></li>
+                                <li><a href="coffee/cfhoatan.html">Cà Phê Hòa Tan</a></li>
                             </div>
                         </ul>
                     </li>
                     <li class="nav-cell">
-                        <a href="">Trà Cổ Thụ</a>
+                        <a href="tracothu/tracothu.html">Trà Cổ Thụ</a>
                     </li>
                     <li class="nav-cell">
-                        <a href="#">
+                        <a href="dovai/dovai.html">
                             Đồ Vải
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
                         </a>
                         <ul class="dropdown-menu">
                             <div>
-                                <li><a href="#">Túi Vải</a></li>
-                                <li><a href="#">Áo</a></li>
-                                <li><a href="#">Quần</a></li>
-                                <li><a href="#">Giày Dép</a></li>
-                                <li><a href="#">Sản Phẩm Khác</a></li>
+                                <li><a href="dovai/tui.html">Túi Vải</a></li>
+                                <li><a href="dovai/ao.html">Áo</a></li>
+                                <li><a href="dovai/quan.html">Quần</a></li>
+                                <li><a href="dovai/giaydep.html">Giày Dép</a></li>
+                                <li><a href="dovai/sanphamkhac.html">Sản Phẩm Khác</a></li>
                             </div>
                         </ul>
                     </li>
                     <li class="nav-cell">
-                        <a href="#">Đồ Giấy</a>
+                        <a href="dogiay/dogiay.html">Đồ Giấy</a>
                     </li>
                     <li class="nav-cell">
-                        <a href="#">Đồ Da</a>
+                        <a href="doda/doda.html">Đồ Da</a>
                     </li>
                     <li class="nav-cell">
-                        <a href="#">Đồ Sứ</a>
+                        <a href="dosu/dosu.html">Đồ Sứ</a>
                     </li>
                     <li class="nav-cell">
-                        <a href="#">Liên Hệ</a>
+                        <a href="lienhe/lienhe.html">Liên Hệ</a>
                     </li>
                 </ul>
             </div>
@@ -117,8 +244,8 @@
                                     <p>Tìm kiếm</p>
                                 </div>    
                                 <div class="site-search">
-                                    <input type="text" placeholder="Tìm kiếm sản phẩm..." id="autoCompleteSearch">
-                                    <button type="submit" id="search-btn">
+                                    <input type="text" placeholder="Tìm kiếm sản phẩm..." id="header-name-search">
+                                    <button type="submit" id="search-submit-btn">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
                                     </button>
                                 </div>
@@ -267,10 +394,10 @@
                                                     </tr>
                                                     <tr>
                                                         <td>
-                                                            <a href="" class="linktocart">Xem giỏ hàng</a>
+                                                            <a href="cart.html" class="linktocart">Xem giỏ hàng</a>
                                                         </td>
                                                         <td>    
-                                                            <a href="" class="linktocheckout">Thanh toán</a>
+                                                            <a href="cart.html" class="linktocheckout">Thanh toán</a>
                                                         </td>
                                                     </tr>
                                                 </tbody>
@@ -284,9 +411,301 @@
                 </div>
             </div>
         </div>
+        <div class="m-search">
+            <div class="m-search-inner">
+                <input class="m-search-input" type="text" id="m-search">
+                <span class="m-close-search" id="m-close-search-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
+                    </svg>
+                </span>
+                <button class="m-search-button" type="submit" id="m-search-btn">
+                    <svg version="1.1" class="svg search" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 27" style="enable-background:new 0 0 24 27;" xml:space="preserve">
+                        <path d="M10,2C4.5,2,0,6.5,0,12s4.5,10,10,10s10-4.5,10-10S15.5,2,10,2z M10,19c-3.9,0-7-3.1-7-7s3.1-7,7-7s7,3.1,7,7S13.9,19,10,19z"></path>
+                        <rect x="17" y="17" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -9.2844 19.5856)" width="4" height="8"></rect>
+                    </svg>
+                </button>
+            </div>
+        </div>
     </div>
     <div class="container">
-
+        <div class="container-inner">
+            <div class="container-header animation-tran active">
+                <div class="container-fluid">
+                    <div class="site-animation">
+                        <h2>Sản Phẩm Bán Chạy</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper-collection">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="clearfix content-product-list">
+                            <div class="product-box">
+                                <div class="product-inner">
+                                    <div class="product-img">
+                                        <a href="#" class="image-resize">
+                                            <picture>
+                                                <img src="../../assets/images/quaymaudich/products/caphexahoi1.webp" alt="Product Thumbnail">
+                                            </picture>
+                                            <picture>
+                                                <img src="../../assets/images/quaymaudich/products/caphexahoi2.webp" alt="Product Thumbnail">
+                                            </picture>
+                                        </a>
+                                    </div>
+                                    <div class="product-detail clearfix">
+                                        <div class="product-detail-inner">
+                                            <h3 class="product-name">
+                                                <a href="#" title="Cà Phê Xã Hội">Cà Phê Xã Hội</a>
+                                            </h3>
+                                            <div class="product-price">
+                                                <p class="product-price-inner">
+                                                    <span>105,000₫</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="product-inner">
+                                    <div class="product-img">
+                                        <a href="#" class="image-resize">
+                                            <picture>
+                                                <img src="../../assets/images/quaymaudich/products/caphechunghia1.webp" alt="Product Thumbnail">
+                                            </picture>
+                                            <picture>
+                                                <img src="../../assets/images/quaymaudich/products/caphechunghia2.webp" alt="Product Thumbnail">
+                                            </picture>
+                                        </a>
+                                    </div>
+                                    <div class="product-detail">
+                                        <div class="product-detail-inner">
+                                            <h3 class="product-name">
+                                                <a href="#" title="Cà Phê Chủ Nghĩa">Cà Phê Chủ Nghĩa</a>
+                                            </h3>
+                                            <div class="product-price">
+                                                <p class="product-price-inner">
+                                                    <span>105,000₫</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="product-inner">
+                                    <div class="product-img">
+                                        <a href="#" class="image-resize">
+                                            <picture>
+                                                <img src="../../assets/images/quaymaudich/products/caphepho1.webp" alt="Product Thumbnail">
+                                            </picture>
+                                            <picture>
+                                                <img src="../../assets/images/quaymaudich/products/caphepho2.webp" alt="Product Thumbnail">
+                                            </picture>
+                                        </a>
+                                    </div>
+                                    <div class="product-detail">
+                                        <div class="product-detail-inner">
+                                            <h3 class="product-name">
+                                                <a href="#" title="Cà Phê Phở">Cà Phê Phở</a>
+                                            </h3>
+                                            <div class="product-price">
+                                                <p class="product-price-inner">
+                                                    <span>115,000₫</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="product-inner">
+                                    <div class="product-img">
+                                        <a href="#" class="image-resize">
+                                            <picture>
+                                                <img src="../../assets/images/quaymaudich/products/caphedoclap1.webp" alt="Product Thumbnail">
+                                            </picture>
+                                            <picture>
+                                                <img src="../../assets/images/quaymaudich/products/caphedoclap2.webp" alt="Product Thumbnail">
+                                            </picture>
+                                        </a>
+                                    </div>
+                                    <div class="product-detail">
+                                        <div class="product-detail-inner">
+                                            <h3 class="product-name">
+                                                <a href="#" title="Cà Phê Độc Lập">Cà Phê Độc Lập</a>
+                                            </h3>
+                                            <div class="product-price">
+                                                <p class="product-price-inner">
+                                                    <span>105,000₫</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="product-inner">
+                                    <div class="product-img">
+                                        <a href="#" class="image-resize">
+                                            <picture>
+                                                <img src="../../assets/images/quaymaudich/products/caphetudo1.webp" alt="Product Thumbnail">
+                                            </picture>
+                                            <picture>
+                                                <img src="../../assets/images/quaymaudich/products/caphetudo2.webp" alt="Product Thumbnail">
+                                            </picture>
+                                        </a>
+                                    </div>
+                                    <div class="product-detail">
+                                        <div class="product-detail-inner">
+                                            <h3 class="product-name">
+                                                <a href="#" title="Cà Phê Tự Do">Cà Phê Tự Do</a>
+                                            </h3>
+                                            <div class="product-price">
+                                                <p class="product-price-inner">
+                                                    <span>115,000₫</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="product-inner">
+                                    <div class="product-img">
+                                        <a href="#" class="image-resize">
+                                            <picture>
+                                                <img src="../../assets/images/quaymaudich/products/caphehanhphuc1.webp" alt="Product Thumbnail">
+                                            </picture>
+                                            <picture>
+                                                <img src="../../assets/images/quaymaudich/products/caphehanhphuc2.webp" alt="Product Thumbnail">
+                                            </picture>
+                                        </a>
+                                    </div>
+                                    <div class="product-detail">
+                                        <div class="product-detail-inner">
+                                            <h3 class="product-name">
+                                                <a href="#" title="Cà Phê Quế Hạnh Phúc">Cà Phê Quế Hạnh Phúc</a>
+                                            </h3>
+                                            <div class="product-price">
+                                                <p class="product-price-inner">
+                                                    <span>115,000₫</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="product-inner">
+                                    <div class="product-img">
+                                        <a href="#" class="image-resize">
+                                            <picture>
+                                                <img src="../../assets/images/quaymaudich/products/tracuctuiloc1.webp" alt="Product Thumbnail">
+                                            </picture>
+                                            <picture>
+                                                <img src="../../assets/images/quaymaudich/products/tracuctuiloc2.webp" alt="Product Thumbnail">
+                                            </picture>
+                                        </a>
+                                    </div>
+                                    <div class="product-detail">
+                                        <div class="product-detail-inner">
+                                            <h3 class="product-name">
+                                                <a href="#" title="Trà Phê Túi Lọc">Trà Phê Túi Lọc</a>
+                                            </h3>
+                                            <div class="product-price">
+                                                <p class="product-price-inner">
+                                                    <span>76,000₫</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="product-inner">
+                                    <div class="product-img">
+                                        <a href="#" class="image-resize">
+                                            <picture>
+                                                <img src="../../assets/images/quaymaudich/products/traquetuiloc1.webp" alt="Product Thumbnail">
+                                            </picture>
+                                            <picture>
+                                                <img src="../../assets/images/quaymaudich/products/traquetuiloc2.webp" alt="Product Thumbnail">
+                                            </picture>
+                                        </a>
+                                    </div>
+                                    <div class="product-detail">
+                                        <div class="product-detail-inner">
+                                            <h3 class="product-name">
+                                                <a href="#" title="Trà Quế Túi Lọc">Trà Quế Túi Lọc</a>
+                                            </h3>
+                                            <div class="product-price">
+                                                <p class="product-price-inner">
+                                                    <span>76,000₫</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="product-inner">
+                                    <div class="product-img">
+                                        <a href="#" class="image-resize">
+                                            <picture>
+                                                <img src="../../assets/images/quaymaudich/products/traxanhtuiloc1.webp" alt="Product Thumbnail">
+                                            </picture>
+                                            <picture>
+                                                <img src="../../assets/images/quaymaudich/products/traxanhtuiloc2.webp" alt="Product Thumbnail">
+                                            </picture>
+                                        </a>
+                                    </div>
+                                    <div class="product-detail">
+                                        <div class="product-detail-inner">
+                                            <h3 class="product-name">
+                                                <a href="#" title="Trà Xanh Túi Lọc">Trà Xanh Túi Lọc</a>
+                                            </h3>
+                                            <div class="product-price">
+                                                <p class="product-price-inner">
+                                                    <span>76,000₫</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-box">
+                                <div class="product-inner">
+                                    <div class="product-img">
+                                        <a href="#" class="image-resize">
+                                            <picture>
+                                                <img src="../../assets/images/quaymaudich/products/tracuctuiloc1.webp" alt="Product Thumbnail">
+                                            </picture>
+                                            <picture>
+                                                <img src="../../assets/images/quaymaudich/products/tracuctuiloc2.webp" alt="Product Thumbnail">
+                                            </picture>
+                                        </a>
+                                    </div>
+                                    <div class="product-detail">
+                                        <div class="product-detail-inner">
+                                            <h3 class="product-name">
+                                                <a href="#" title="Trà Cúc Túi Lọc">Trà Cúc Túi Lọc</a>
+                                            </h3>
+                                            <div class="product-price">
+                                                <p class="product-price-inner">
+                                                    <span>76,000₫</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="footer">
         <div class="top-footer">
@@ -298,8 +717,8 @@
                             <h4>Đăng Kí Nhận Tin</h4>
                         </div>
                         <div class="form">
-                            <input placeholder="Nhập email của bạn" type="email">
-                            <button type="submit">Đăng Kí</button>
+                            <input placeholder="Nhập email của bạn" type="email" id="footer-email">
+                            <button type="submit" id="footer-email-submit-btn">Đăng Kí</button>
                         </div>
                     </div>
                 </div>
@@ -391,6 +810,5 @@
     </div>
 
     <script src="../../scripts/quaymaudich/qmdheadfootscript.js"></script>
-    <script src="../../scripts/quaymaudich/quaymaudich.js"></script>
 </body>
 </html>
