@@ -1,0 +1,245 @@
+:root {
+    --theme-color: #4c5b29;
+    --lighter-theme-color: #507820;
+
+    --white-background-color: #ffffff;
+    --black-background-color: #000000;
+    --default-background-color-hover: #f1f1f1;
+    --darker-background-color: #3c5e2c;
+
+    --white-text-color: #ffffff;
+    --black-text-color: #000000;
+    --default-text-color: #232323;
+    --lighter-text-color: #555555;
+
+    --white-border-color: #ffffff;
+    --black-border-color: #000000;
+    --gray-border-color: #bebfc0;
+    --theme-border-color: #3c5e2c;
+    --white-border-value: 1px solid #ffffff;
+    --black-border-value: 1px solid #000000;
+    --gray-border-value: 1px solid #ced4da;
+    --light-border-value: 1px solid #dddddd;
+    --dark-border-value: 1px solid #232323;
+    --theme-border-value: 1px solid #3c5e2c;
+
+    --default-input-text: #495057;
+
+    --default-shadow-value: 0px 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+@font-face {
+    font-family: 'NittiTypewriter';
+    src: url(../assets/fonts/NittiTypewriter-21d2137501e11e71a7bc1d5f496a6b7f.otf);
+}
+
+@font-face {
+    font-family: 'BeauLuloClean-OneBold';
+    src: url(../assets/fonts/BeauLuloClean-OneBold-4ce34c0eaf26a1818d6dc4bae56dbaf8.otf);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.3vw;
+}
+
+.container {
+    width: 65%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.relatedPrd h4 {
+    font-family: 'BeauLuloClean-OneBold';
+    font-size: 18px;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+    color: #555;
+    padding: 30px 0px 24px;
+}
+
+.itemProducts a {
+    display: block;
+}
+
+.swiper a:hover {
+    color: #507820 !important;
+}
+.itemProducts img {
+    max-width: 100%;
+}
+
+.shopProductsDetail {
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.images img {
+    max-width: 100%;
+}
+
+.descriptionPrd {
+    line-height: 2;
+}
+
+.titlePrd {
+    font-family: 'BeauLuloClean-OneBold';
+    font-size: 1.7vw;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+    color: #555;
+}
+
+a {
+    text-decoration: none !important;
+    color: var(--theme-color);
+
+}
+
+.relatedPrd {
+    margin-top: 25px;
+    margin-bottom: 100px;
+}
+
+.itemTitle {
+    font-family: 'BeauLuloClean-OneBold';
+    font-size: 13px;
+    margin-bottom: 5px;
+    color: #555;
+    text-transform: capitalize;
+    list-style: none;
+}
+
+.h-flex img {
+    width: 300px;
+    user-select: none;
+}
+
+.itemProduct a {
+    display: block;
+}
+
+.itemProduct img {
+    max-width: 100%;
+}
+
+.itemProduct a {
+    display: block;
+}
+
+.itemProduct img {
+    max-width: 100%;
+}
+
+.itemList {
+    display: flex;
+    overflow-x: auto;
+    max-width: 100%;
+    gap: 20px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+.itemList::-webkit-scrollbar {
+    display: none;
+}
+
+@media screen and (max-width: 635px) {
+    .container {
+        width: 90%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .product-summary {
+        padding: 20px !important;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .images {
+        display: block !important;
+    }
+
+    .images img {
+        max-width: 100% !important;
+        margin-top: 0 !important;
+    }
+
+    .col-sm-6 {
+        width: 100% !important;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 766px) {
+    .container {
+        width: 90%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .product-summary {
+        padding: 20px;
+        padding-top: 0px;
+    }
+
+    .titlePrd {
+        font-size: 15px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .images {
+        display: flex;
+        justify-content: center;
+    }
+
+    .images img {
+        max-width: 100%;
+        
+    }
+
+    .col-sm-6 {
+        width: 65%;
+    }
+
+    .row {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+        width: 90%;
+        padding-right: 15px;
+        padding-left: 15px;
+        padding-top: 40px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    p {
+        font-size: 16px;
+    }
+}
