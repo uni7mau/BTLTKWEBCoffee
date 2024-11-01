@@ -64,12 +64,14 @@
 }
 
 .introduce {
-    margin: 83px 0;
+    width: 80%;
+    margin:0;
 }
 
 .main-content {
-    width: 70%;
+    width: 80%;
     margin: 10% 0;
+    gap: 8%;
 }
 
 .parabox {
