@@ -37,6 +37,12 @@
     src: url(./assets/fonts/BeauLuloClean-OneBold-4ce34c0eaf26a1818d6dc4bae56dbaf8.otf);
 }
 
+@media only screen and (min-width: 1400px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 100%;
+    }
+}
+
 @media only screen and (max-width: 992px) {
     .m-header{
         z-index: 100;
@@ -107,34 +113,52 @@
 
 /* code here */
 
+
 a{
     color: #555555 !important;
 }
 
+.carousel-inner{
+    height: 700px;
+}
+
+.carousel-inner img{
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-inner .carousel-item{
+    height: 100%;
+
+}
+
 .carousel-inner .carousel-caption{
-    background-color: #EAE0C2;
+    background-color: #f8e9ca;
     width: 100%;
     right: 0;
     left: 0;
     bottom: 0;
     padding-bottom: 0;
     color: #555555;
+    opacity: 0.8;
+    /* height: 15%; */
 }
 .carousel-inner .carousel-caption h5{
-    width: 80%;
-    font-weight: bold;
-    font-size: 25px;
-    margin: 0 10%;;
+    font-family: 'BeauLuloClean-OneBold';
+    width: 100%;
+    font-size: 17px;
+    margin-bottom: 10px;;
 }
 
 .carousel-inner .carousel-caption p{
     width: 60%;
     margin: 0 20%;
+    /* line-height: 1.7; */
 }
 
 .carousel-inner .carousel-caption a{
     color: #94A078;
-    text-decoration: underline ;
+    text-decoration: underline;
     font-size: 14px;
     margin-left: 70%;
 }
@@ -202,7 +226,7 @@ section.content{
 .card .card-title{
     font-family: 'BeauLuloClean-OneBold';
 
-    font-size: 22px;
+    /* font-size: 20px; */
     font-weight: bold;
     margin: 0;
 }
