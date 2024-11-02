@@ -1364,7 +1364,6 @@ table tr td:last-child {
     font-weight: 500;
     width: 100%;
     transition: all 0.15s linear;
-
 }
 
 .header .m-search-input:focus {
