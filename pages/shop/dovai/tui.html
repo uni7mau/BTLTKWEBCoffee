@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../../../assets/css/qmdfootheadstyle.css">
     <link rel="stylesheet" href="../../../assets/css/special-font-style.css">
     <link rel="stylesheet" href="../../../assets/css/bgncmstyle.css">
+    <link rel="stylesheet" href="../../../assets/css/nutthemgiohang.css">
 </head>
 <body>
     <div class="header" id="site-header">
@@ -320,48 +321,23 @@
                                     </div>
                                     <div class="cart-view">
                                         <div class="cart-view-scroll">
-                                            <table class="table-clone-cart" id="clone-item-cart">
-                                                <tbody>
-                                                    <tr class="item-2 hidden">
-                                                        <td class="img">
-                                                            <a href="" title>
-                                                                <img src="" alt="">
-                                                            </a>
-                                                        </td>
-                                                        <td>
-                                                            <p class="pro-title">
-                                                                <a href="" class="pro-title-view"></a>
-                                                                <span class="variant"></span>
-                                                            </p>
-                                                            <div class="mini-cart-quantity">
-                                                                <div class="pro-quantity-view">
-                                                                    <span class="qty-value"></span>
-                                                                </div>
-                                                                <div class="pro-price-view"></div>
-                                                            </div>
-                                                            <div class="remove-cart"></div>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
                                             <table id="cart-view-inner">
                                                 <tbody>
-                                                    <tr class="item-cart-empty">
-                                                        <td>
-                                                            <div class="svgico-mini-cart">
-                                                                <svg width="81" height="70" viewBox="0 0 81 70">
-                                                                    <g transform="translate(0 2)" stroke-width="4" stroke="#1e2d7d" fill="none" fill-rule="evenodd">
-                                                                        <circle stroke-linecap="square" cx="34" cy="60" r="6"></circle>
-                                                                        <circle stroke-linecap="square" cx="67" cy="60" r="6"></circle>
-                                                                        <path d="M22.9360352 15h54.8070373l-4.3391876 30H30.3387146L19.6676025 0H.99560547"></path>
-                                                                    </g>
-                                                                </svg>
-                                                            </div>
-                                                            Hiện chưa có sản phẩm
-                                                        </td>
-                                                    </tr>
+                                                    
                                                 </tbody>
                                             </table>
+                                        </div>
+                                        <div id="item-cart-empty">
+                                            <div class="svgico-mini-cart">
+                                                <svg width="81" height="70" viewBox="0 0 81 70">
+                                                    <g transform="translate(0 2)" stroke-width="4" stroke="#1e2d7d" fill="none" fill-rule="evenodd">
+                                                        <circle stroke-linecap="square" cx="34" cy="60" r="6"></circle>
+                                                        <circle stroke-linecap="square" cx="67" cy="60" r="6"></circle>
+                                                        <path d="M22.9360352 15h54.8070373l-4.3391876 30H30.3387146L19.6676025 0H.99560547"></path>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <p>Hiện chưa có sản phẩm</p>
                                         </div>
                                         <div class="horizontal-splitline"></div>
                                         <div class="cart-view-total">
@@ -500,6 +476,10 @@
                                                             </p>
                                                         </div>
                                                     </div>
+                                                    <input type="number" id="quantity-input-xanh" value="1" min="1" style="width: 50px;">
+                                                    <button class="add-to-cart-btn" onclick="addToCart('Túi Địa Phương', 85000, '../../../assets/images/quaymaudich/products/tuidiaphuong1.webp', document.getElementById('quantity-input-xanh').value)">
+                                                        Thêm
+                                                    </button>
                                                 </div>
                                             </div>
                                         </div>
@@ -616,5 +596,6 @@
 
     <script src="../../../scripts/quaymaudich/headfootnomodal.js"></script>
     <script src="../../../scripts/quaymaudich/bgncm.js"></script>
+    <script src="../../../scripts/quaymaudich/cartscript.js"></script>
 </body>
 </html>
