@@ -581,7 +581,7 @@ input, button {
 }
 
 .nav-cell > a:hover svg {
-    transform: rotate(180deg);
+    transform: rotate(0deg);
     fill: var(--theme-text-color);
 }
 
@@ -589,6 +589,7 @@ input, button {
     width: 12px;
     height: 12px;
     margin-left: 4px;
+    transform: rotate(180deg);
 }
 
 .dropdown-menu {
