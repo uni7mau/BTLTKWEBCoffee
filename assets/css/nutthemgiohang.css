@@ -1,0 +1,14 @@
+button.add-to-cart-btn{
+    background-color: #3c6347;
+    height: 20px;
+    width: 20px;
+}
+
+.add-to-cart-btn div{
+    font-weight: 800;
+    font-size: 20px;
+    text-align: center;
+}
+
+.item-2.hidden { display: none; } /* Ẩn mẫu sản phẩm ban đầu */
+.cart-dropdown .table-clone-cart td img { width: 50px; } /* Kích thước ảnh trong giỏ */
