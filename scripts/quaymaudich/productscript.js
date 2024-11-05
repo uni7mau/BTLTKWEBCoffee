@@ -40,7 +40,6 @@ window.onscroll = () => {
         if (top >= offset && top < offset + height) {
             leftLink.forEach(links => {
                 links.classList.remove("current")
-                
                 document.querySelector(".left-product .product-cell a[href*=" + id + "]").closest(".product-cell").classList.add("current")
             })
         }

@@ -24,7 +24,7 @@ const input = document.querySelector("#email"),
     submitBtn.disabled = true
 
 input.addEventListener("keyup", () => {
-    let pattern = /^[^ ]+@[^ ]+\.[a-z]{3}$/
+    let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/
     submitBtn.disabled = !submitBtn.disabled
     if (input.value === "") {
         submitBtn.classList.remove("active")
