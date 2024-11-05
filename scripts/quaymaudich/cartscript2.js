@@ -16,23 +16,18 @@ function minusQuantity() {
 
 // Hàm thêm sản phẩm vào giỏ hàng
 function addToCart() {
-    // Lấy thông tin sản phẩm từ HTML
     const name = document.querySelector('.product-title h1').textContent;
     const price = parseInt(document.querySelector('.product-price .pro-price.active').textContent.replace('₫', '').replace(',', ''));
     const quantity = parseInt(document.getElementById('quantity').value);
     const image = document.querySelector('.product-gallery img').src;
 
-    // Kiểm tra sản phẩm đã có trong giỏ chưa
     const existingItemIndex = cart.findIndex(item => item.name === name);
     if (existingItemIndex !== -1) {
-        // Nếu có, tăng số lượng sản phẩm lên
         cart[existingItemIndex].quantity += quantity;
     } else {
-        // Nếu chưa có, thêm mới vào giỏ hàng
         cart.push({ name, price, quantity, image });
     }
 
-    // Lưu giỏ hàng vào localStorage và cập nhật hiển thị
     saveCart();
     updateCartDisplay();
     displayCartItems();
@@ -55,7 +50,8 @@ function displayCartItems() {
     const cartItemsContainer = document.getElementById('clone-item-cart').querySelector('tbody');
     const totalViewCart = document.getElementById('total-view-cart');
     
-    cartItemsContainer.innerHTML = '';
+    // Sử dụng DocumentFragment để tối ưu việc thêm phần tử
+    const fragment = document.createDocumentFragment();
     let totalPrice = 0;
 
     cart.forEach(item => {
@@ -77,15 +73,18 @@ function displayCartItems() {
                 </p>
                 <div class="mini-cart-quantity">
                     <p>Số lượng: ${item.quantity}</p>
-                    <div class="pro-price-view">Giá: ${item.price}₫</div>
+                    <div class="pro-price-view">Giá: ${item.price.toLocaleString()}₫</div>
                 </div>
-                <div class="total-item-price">Thành tiền: ${itemTotal}₫</div>
+                <div class="total-item-price">Thành tiền: ${itemTotal.toLocaleString()}₫</div>
                 <button onclick="removeFromCart('${item.name}')">Xóa</button>
             </td>
         `;
-        cartItemsContainer.appendChild(cartRow);
+        fragment.appendChild(cartRow);
     });
 
+    // Cập nhật vào DOM một lần duy nhất
+    cartItemsContainer.innerHTML = '';
+    cartItemsContainer.appendChild(fragment);
     totalViewCart.innerText = `${totalPrice.toLocaleString()}₫`;
 }
 
@@ -99,9 +98,7 @@ function removeFromCart(name) {
 
 // Tải giỏ hàng khi trang tải lại
 window.onload = function() {
-    const savedCart = localStorage.getItem('cart');
-    if (savedCart) {
-        cart = JSON.parse(savedCart);
+    if (cart.length > 0) {
         updateCartDisplay();
         displayCartItems();
     }
