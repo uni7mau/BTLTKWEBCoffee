@@ -9,11 +9,7 @@ const error_message = document.getElementById("error-message")
 form.addEventListener("submit", (e) => {
     let errors = []
 
-    if (firstname_input) {
-        errors = getSignupFormErrors(lastname_input.value, firstname_input.value, email_input.value, password_input.value)
-    } else {
-        errors = getLoginFormError(email_input.value, password_input.value)
-    }
+    errors = getSignUpFormErrors(lastname_input.value, firstname_input.value, email_input.value, password_input.value)
 
     if (errors.length > 0) {
         e.preventDefault()
@@ -21,7 +17,7 @@ form.addEventListener("submit", (e) => {
     }
 })
 
-function getSignupFormErrors(lastname, firstname, email, password) {
+function getSignUpFormErrors(lastname, firstname, email, password) {
     let errors = []
     if (lastname === "" || lastname == null) {
         errors.push("Lastname is required")

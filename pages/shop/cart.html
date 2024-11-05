@@ -263,7 +263,7 @@
                                                     <button class="submit-button" type="submit" id="login-btn">Đăng nhập</button>
                                                 </div>
                                                 <div class="secondary-box">
-                                                    <p>Khách hàng mới? <a href="#">Tạo tài khoản</a></p>
+                                                    <p>Khách hàng mới? <a href="signup.html">Tạo tài khoản</a></p>
                                                     <p>Quên mật khẩu? <button id="log-recovery-apr-btn">Khôi phục mật khẩu</button></p>
                                                 </div>
                                             </div>
@@ -383,7 +383,77 @@
         </div>
     </div>
     <div class="container">
-
+        <div class="container-fluid">
+            <div class="cart-title">
+                <p>Giỏ hàng</p>
+            </div>
+            <div class="cart-left-slide">
+                <div id="ctn-cart-view">
+                    <div class="cart-view-scroll">
+                        <table id="ctn-cart-view-inner">
+                            <tbody>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="ctn-item-cart-empty">
+                        <div class="svgico-mini-cart">
+                            <svg width="81" height="70" viewBox="0 0 81 70">
+                                <g transform="translate(0 2)" stroke-width="4" stroke="#1e2d7d" fill="none" fill-rule="evenodd">
+                                    <circle stroke-linecap="square" cx="34" cy="60" r="6"></circle>
+                                    <circle stroke-linecap="square" cx="67" cy="60" r="6"></circle>
+                                    <path d="M22.9360352 15h54.8070373l-4.3391876 30H30.3387146L19.6676025 0H.99560547"></path>
+                                </g>
+                            </svg>
+                        </div>
+                        <p>Hiện chưa có sản phẩm</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-right-slide">
+                <div class="things">
+                    <div class="things-inside">
+                        <h4>Ghi chú đơn hàng</h4>
+                        <div class="check-out-note clearfix">
+                            <textarea name="note" id="note" placeholder="Ghi chú"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="prvc">
+                    <h4>Chính Sách Mua Hàng</h4>
+                    <ul>
+                        <li>Sản phẩm được đổi với những lỗi do sản xuất, không hỗ trợ trả.</li>
+                        <li>Các sản phẩm còn đủ tem mác, chưa qua sử dụng.</li>
+                        <li>Sản phẩm nguyên giá được đổi trong vòng 3 ngày làm việc</li>
+                    </ul>
+                </div>
+                <div class="slidebox-order">
+                    <div class="slidebox-order-inner">
+                        <div class="slidebox-order-title">
+                            <h3>Thông tin đơn hàng</h3>
+                        </div>
+                        <div class="slidebox-order-total">
+                            <p>
+                                Tổng tiền
+                                <span class="total-prc" id="m-total-view-cart">0₫</span>
+                            </p>
+                        </div>
+                        <div class="slidebox-order-text">
+                            <p>Phí vận chuyển sẽ được tính ở trang thanh toán.<br>Bạn cũng có thể nhập mã giảm giá ở trang thanh toán.</p>
+                        </div>
+                        <div class="slidebox-order-action">
+                            <a class="checkout-button">Thanh toán</a>
+                            <div class="link-continue">
+                                <a href="quaymaudich.html">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
+                                    Tiếp tục mua hàng
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="footer">
         <div class="top-footer">
@@ -488,5 +558,6 @@
     </div>
 
     <script src="../../scripts/quaymaudich/headfootnomodal.js"></script>
+    <script src="../../scripts/quaymaudich/cartscript.js"></script>
 </body>
 </html>
