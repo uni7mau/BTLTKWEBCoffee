@@ -74,7 +74,7 @@ function displayCartItems() {
                     </div>
                 </td>
             `;
-            fragment.appendChild(cartRow);
+            cartItemsContainer.appendChild(cartRow);
         });
     }
 
