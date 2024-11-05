@@ -50,6 +50,12 @@
     z-index: 99;
 }
 
+@media (max-width: 991px) {
+    .container {
+        padding: 125px 0;
+    }
+}
+
 .container-inner {
     display: block;
 }

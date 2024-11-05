@@ -50,6 +50,12 @@
     z-index: 99;
 }
 
+@media (max-width: 991px) {
+    .container {
+        padding: 125px 0;
+    }
+}
+
 .container-inner {
     display: block;
 }
@@ -119,6 +125,11 @@
 .row {
     margin-right: -15px;
     margin-left: -15px;
+}
+
+.content-product-list {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .product-box {
@@ -296,6 +307,10 @@
     font-size: 14px;
     color: var(--dark-text-color-v1);
     transition: color 0.15s linear;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    display: -webkit-box;
 }
 
 .product-detail h3 a:hover {
