@@ -56,7 +56,7 @@ function displayCartItems() {
             cartRow.innerHTML = `
                 <td class="img">
                     <a href="#" title="${item.name}">
-                        <img src="${item.image}" alt="${item.name}">
+                        <img src="${item.image}" alt="${item.name}" onerror="this.src='../../assets/images/placeholder.png'">
                     </a>
                 </td>
                 <td class="des">
